@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+builder_*.py
+generate_*.py
+data_builder_base.py
