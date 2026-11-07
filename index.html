@@ -290,8 +290,8 @@
                 <div class="v-feat-item">
                   <span class="vf-icon" style="background: rgba(246, 27, 82, 0.15); color: #dc2626;">⚡</span>
                   <div>
-                    <strong>Quiz Trắc Nghiệm Bẫy SAT</strong>
-                    <p>Tự động lấy 3 định nghĩa nhiễu từ các list khác, thưởng sao Aced! khi đạt 10/10.</p>
+                    <strong>Quiz Trắc Nghiệm Từ Vựng C1-C2</strong>
+                    <p>Tự động tạo câu hỏi trắc nghiệm ngữ cảnh, kiểm tra khả năng phân biệt từ đồng nghĩa và collocation.</p>
                   </div>
                 </div>
               </div>
@@ -303,24 +303,24 @@
         <section class="home-section features-section">
           <div class="features-grid">
             <div class="feature-card">
-              <div class="feat-icon-wrap bg-blue-tint">🧮</div>
-              <h4>Desmos & Công Cụ Chuẩn Bluebook</h4>
-              <p>Tích hợp máy tính vẽ đồ thị Desmos chính thức và bảng công thức hình học chuẩn College Board.</p>
+              <div class="feat-icon-wrap bg-blue-tint">🎧</div>
+              <h4>Audio Listening & PDF Tương Tác</h4>
+              <p>Tích hợp file nghe chất lượng cao Part 1 & 2, bộ chỉnh tốc độ và tự động đồng bộ trang đề thi PDF.</p>
             </div>
             <div class="feature-card">
               <div class="feat-icon-wrap bg-green-tint">🎯</div>
-              <h4>Gợi Ý Socratic 3 Cấp Độ</h4>
-              <p>Định hướng tư duy tự nhiên ở lần 1, cung cấp công thức ở lần 2 và phân tích giải thích ở lần 3.</p>
+              <h4>Phương Pháp Socratic 4 Cấp Độ</h4>
+              <p>Khơi gợi manh mối, phân tích ngữ cảnh, vạch trần cạm bẫy HSG và giải thích chi tiết logic đáp án.</p>
             </div>
             <div class="feature-card">
               <div class="feat-icon-wrap bg-amber-tint">📝</div>
-              <h4>Sổ Tay Thử Sai Bắt Buộc</h4>
-              <p>Tự động ghi chép phân tích thử sai và hướng dẫn phản tư bẫy SAT trước khi mở khóa câu tiếp theo.</p>
+              <h4>Sổ Thử Sai & Từ Vựng Thông Minh</h4>
+              <p>Tự động ghi chép phân tích thử sai, phản tư bẫy đề thi HSG và lưu trữ từ vựng C1-C2 kèm phát âm bản xứ.</p>
             </div>
             <div class="feature-card">
               <div class="feat-icon-wrap bg-purple-tint">☁️</div>
               <h4>100% Độc Lập Cho Từng Học Sinh</h4>
-              <p>Toàn bộ tiến độ lưu trong trình duyệt cá nhân, kích hoạt ứng dụng Mail trên máy gửi kết quả.</p>
+              <p>Toàn bộ tiến độ lưu trong trình duyệt cá nhân, hỗ trợ xuất báo cáo Excel và thẻ học Anki.</p>
             </div>
           </div>
         </section>
@@ -917,18 +917,22 @@
             </div>
             <div class="add-panel-grid">
               <div class="form-group">
-                <label for="select-new-trap">1. Nhóm bẫy đề thi HSG <span class="req">*</span></label>
+                <label for="select-new-trap">1. Lỗi sai phổ biến / Nhóm bẫy đề thi HSG <span class="req">*</span></label>
                 <select id="select-new-trap" class="g-select">
-                  <option value="Bẫy Đảo ngữ & Cấu trúc nhấn mạnh (Inversion / Cleft)">⚡ Bẫy Đảo ngữ & Cấu trúc nhấn mạnh (Inversion / Cleft)</option>
-                  <option value="Bẫy Collocations & Giới từ đi kèm (Prepositions)">📖 Bẫy Collocations & Giới từ đi kèm (Prepositions)</option>
-                  <option value="Bẫy Cấu tạo từ & Tiền/Hậu tố phủ định (Word Formation)">🔤 Bẫy Cấu tạo từ & Tiền/Hậu tố phủ định (Word Formation)</option>
-                  <option value="Bẫy Thì & Thể giả định (Subjunctive / Conditionals)">💡 Bẫy Thì & Thể giả định (Subjunctive / Conditionals)</option>
-                  <option value="Bẫy Mệnh đề quan hệ & Rút gọn mệnh đề (Participles)">🧩 Bẫy Mệnh đề quan hệ & Rút gọn mệnh đề (Participles)</option>
-                  <option value="Bẫy Từ đồng nghĩa tinh tế & Ngữ cảnh (Nuance & Context)">🔍 Bẫy Từ đồng nghĩa tinh tế & Ngữ cảnh (Nuance & Context)</option>
-                  <option value="Bẫy Nghe nhiễu & Bắt từ tương đồng (Listening Distractor)">🎧 Bẫy Nghe nhiễu & Bắt từ tương đồng (Listening Distractor)</option>
-                  <option value="Bẫy Đọc lướt sót từ khóa quan trọng (Careless Reading)">👀 Bẫy Đọc lướt sót từ khóa quan trọng (Careless Reading)</option>
-                  <option value="Chưa nắm chắc công thức / hiện tượng ngữ pháp">📚 Chưa nắm chắc công thức / hiện tượng ngữ pháp</option>
-                  <option value="Khác">💡 Bẫy khác...</option>
+                  <option value="Bẫy Đảo ngữ & Cấu trúc nhấn mạnh (Inversion / Cleft Sentences)">⚡ Bẫy Đảo ngữ & Cấu trúc nhấn mạnh (Inversion / Cleft Sentences)</option>
+                  <option value="Bẫy Collocations & Giới từ cố định (Fixed Prepositions & Collocations)">📖 Bẫy Collocations & Giới từ cố định (Fixed Prepositions & Collocations)</option>
+                  <option value="Bẫy Cấu tạo từ & Tiền/Hậu tố phủ định (Word Formation & Negative Affixes)">🔤 Bẫy Cấu tạo từ & Tiền/Hậu tố phủ định (Word Formation & Negative Affixes)</option>
+                  <option value="Bẫy Thì, Thể giả định & Câu điều kiện (Subjunctive & Conditionals)">💡 Bẫy Thì, Thể giả định & Câu điều kiện (Subjunctive & Conditionals)</option>
+                  <option value="Bẫy Mệnh đề quan hệ & Rút gọn phân từ (Reduced Clauses & Participles)">🧩 Bẫy Mệnh đề quan hệ & Rút gọn phân từ (Reduced Clauses & Participles)</option>
+                  <option value="Bẫy Cụm động từ & Thành ngữ đa nghĩa (Phrasal Verbs & Idioms)">🎭 Bẫy Cụm động từ & Thành ngữ đa nghĩa (Phrasal Verbs & Idioms)</option>
+                  <option value="Bẫy Từ đồng nghĩa tinh tế & Sắc thái ngữ cảnh (Nuances & Context)">🔍 Bẫy Từ đồng nghĩa tinh tế & Sắc thái ngữ cảnh (Nuances & Context)</option>
+                  <option value="Bẫy Nghe nhiễu & Bắt từ tương đồng sai ngữ cảnh (Listening Distractors)">🎧 Bẫy Nghe nhiễu & Bắt từ tương đồng sai ngữ cảnh (Listening Distractors)</option>
+                  <option value="Bẫy Đọc suy diễn quá xa / Lạc đề / Khẳng định cực đoan (Out of Scope / Overgeneralization)">🎯 Bẫy Đọc suy diễn quá xa / Lạc đề / Khẳng định cực đoan (Out of Scope / Overgeneralization)</option>
+                  <option value="Bẫy Đọc lướt ẩu / Sót từ khóa phủ định (Careless Reading: barely, seldom, not...)">👀 Bẫy Đọc lướt ẩu / Sót từ khóa phủ định (Careless Reading: barely, seldom, not...)</option>
+                  <option value="Bẫy Biến đổi câu / Sót từ khóa bắt buộc (Key Word Transformation)">✏️ Bẫy Biến đổi câu / Sót từ khóa bắt buộc (Key Word Transformation)</option>
+                  <option value="Bẫy Điền từ đoạn văn & Liên từ logic (Cloze Test & Discourse Markers)">✍️ Bẫy Điền từ đoạn văn & Liên từ logic (Cloze Test & Discourse Markers)</option>
+                  <option value="Chưa nắm chắc cấu trúc / hiện tượng ngữ pháp cốt lõi">📚 Chưa nắm chắc cấu trúc / hiện tượng ngữ pháp cốt lõi</option>
+                  <option value="Lỗi sai / Bẫy khác">💡 Lỗi sai / Bẫy đề thi khác...</option>
                 </select>
               </div>
               <div class="form-group">
@@ -1115,19 +1119,23 @@
 
         <form class="reflection-form" id="form-mandatory-reflection" onsubmit="return false;">
           <div class="form-group">
-            <label for="select-refl-trap">1. Nhóm bẫy SAT em đã gặp phải <span class="req">*</span></label>
+            <label for="select-refl-trap">1. Lỗi sai phổ biến / Nhóm bẫy đề thi HSG em đã gặp phải <span class="req">*</span></label>
             <select id="select-refl-trap" required>
-              <option value="">-- Chọn nhóm bẫy SAT em gặp phải --</option>
-              <option value="Bẫy từ vựng & Nghĩa trong ngữ cảnh (Context Clues)">📖 Bẫy từ vựng & Nghĩa trong ngữ cảnh (Context Clues)</option>
-              <option value="Bẫy đảo cực & Từ tuyệt đối (Extreme Words: always, never, only...)">⚠️ Bẫy đảo cực & Từ tuyệt đối (Extreme Words: always, never, only...)</option>
-              <option value="Bẫy tương phản giả & Cụm nối (However, Although, But...)">⚡ Bẫy tương phản giả & Cụm nối (However, Although, But...)</option>
-              <option value="Bẫy suy diễn quá xa / Lạc đề (Out of Scope / Assumption)">🔍 Bẫy suy diễn quá xa / Lạc đề (Out of Scope / Assumption)</option>
-              <option value="Bẫy đọc lướt sót từ khóa quan trọng (Careless Reading)">👀 Bẫy đọc lướt sót từ khóa quan trọng (Careless Reading)</option>
-              <option value="Bẫy đại số / Đổi dấu / Chuyển vế nhầm (Algebra / Sign Trap)">🧮 Bẫy đại số / Đổi dấu / Chuyển vế nhầm (Algebra / Sign Trap)</option>
-              <option value="Bẫy đọc nhầm câu hỏi (Đề hỏi y nhưng giải ra x)">🎯 Bẫy đọc nhầm câu hỏi (Đề hỏi y nhưng giải ra x)</option>
-              <option value="Bẫy làm tròn số / Phân số / Đơn vị đo (Fractions / Units)">📏 Bẫy làm tròn số / Phân số / Đơn vị đo (Fractions / Units)</option>
-              <option value="Chưa nắm chắc công thức / lý thuyết cốt lõi">📚 Chưa nắm chắc công thức / lý thuyết cốt lõi</option>
-              <option value="Khác">💡 Bẫy khác...</option>
+              <option value="">-- Chọn lỗi sai phổ biến / nhóm bẫy đề thi HSG em gặp phải --</option>
+              <option value="Bẫy Đảo ngữ & Cấu trúc nhấn mạnh (Inversion / Cleft Sentences)">⚡ Bẫy Đảo ngữ & Cấu trúc nhấn mạnh (Inversion / Cleft Sentences)</option>
+              <option value="Bẫy Collocations & Giới từ cố định (Fixed Prepositions & Collocations)">📖 Bẫy Collocations & Giới từ cố định (Fixed Prepositions & Collocations)</option>
+              <option value="Bẫy Cấu tạo từ & Tiền/Hậu tố phủ định (Word Formation & Negative Affixes)">🔤 Bẫy Cấu tạo từ & Tiền/Hậu tố phủ định (Word Formation & Negative Affixes)</option>
+              <option value="Bẫy Thì, Thể giả định & Câu điều kiện (Subjunctive & Conditionals)">💡 Bẫy Thì, Thể giả định & Câu điều kiện (Subjunctive & Conditionals)</option>
+              <option value="Bẫy Mệnh đề quan hệ & Rút gọn phân từ (Reduced Clauses & Participles)">🧩 Bẫy Mệnh đề quan hệ & Rút gọn phân từ (Reduced Clauses & Participles)</option>
+              <option value="Bẫy Cụm động từ & Thành ngữ đa nghĩa (Phrasal Verbs & Idioms)">🎭 Bẫy Cụm động từ & Thành ngữ đa nghĩa (Phrasal Verbs & Idioms)</option>
+              <option value="Bẫy Từ đồng nghĩa tinh tế & Sắc thái ngữ cảnh (Nuances & Context)">🔍 Bẫy Từ đồng nghĩa tinh tế & Sắc thái ngữ cảnh (Nuances & Context)</option>
+              <option value="Bẫy Nghe nhiễu & Bắt từ tương đồng sai ngữ cảnh (Listening Distractors)">🎧 Bẫy Nghe nhiễu & Bắt từ tương đồng sai ngữ cảnh (Listening Distractors)</option>
+              <option value="Bẫy Đọc suy diễn quá xa / Lạc đề / Khẳng định cực đoan (Out of Scope / Overgeneralization)">🎯 Bẫy Đọc suy diễn quá xa / Lạc đề / Khẳng định cực đoan (Out of Scope / Overgeneralization)</option>
+              <option value="Bẫy Đọc lướt ẩu / Sót từ khóa phủ định (Careless Reading: barely, seldom, not...)">👀 Bẫy Đọc lướt ẩu / Sót từ khóa phủ định (Careless Reading: barely, seldom, not...)</option>
+              <option value="Bẫy Biến đổi câu / Sót từ khóa bắt buộc (Key Word Transformation)">✏️ Bẫy Biến đổi câu / Sót từ khóa bắt buộc (Key Word Transformation)</option>
+              <option value="Bẫy Điền từ đoạn văn & Liên từ logic (Cloze Test & Discourse Markers)">✍️ Bẫy Điền từ đoạn văn & Liên từ logic (Cloze Test & Discourse Markers)</option>
+              <option value="Chưa nắm chắc cấu trúc / hiện tượng ngữ pháp cốt lõi">📚 Chưa nắm chắc cấu trúc / hiện tượng ngữ pháp cốt lõi</option>
+              <option value="Lỗi sai / Bẫy khác">💡 Lỗi sai / Bẫy đề thi khác...</option>
             </select>
           </div>
 

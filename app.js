@@ -2566,18 +2566,22 @@ function renderErrorLogs() {
             </select>
           </div>
           <div>
-            <label>Nhóm bẫy SAT:</label>
+            <label>Lỗi sai / Nhóm bẫy HSG:</label>
             <select class="g-select edit-trap">
-              <option value="Bẫy từ vựng & Nghĩa trong ngữ cảnh (Context Clues)" ${item.root_cause?.includes("từ vựng") ? "selected" : ""}>📖 Bẫy từ vựng & Nghĩa trong ngữ cảnh (Context Clues)</option>
-              <option value="Bẫy đảo cực & Từ tuyệt đối (Extreme Words: always, never, only...)" ${item.root_cause?.includes("đảo cực") ? "selected" : ""}>⚠️ Bẫy đảo cực & Từ tuyệt đối (Extreme Words: always, never, only...)</option>
-              <option value="Bẫy tương phản giả & Cụm nối (However, Although, But...)" ${item.root_cause?.includes("tương phản") ? "selected" : ""}>⚡ Bẫy tương phản giả & Cụm nối (However, Although, But...)</option>
-              <option value="Bẫy suy diễn quá xa / Lạc đề (Out of Scope / Assumption)" ${item.root_cause?.includes("suy diễn") ? "selected" : ""}>🔍 Bẫy suy diễn quá xa / Lạc đề (Out of Scope / Assumption)</option>
-              <option value="Bẫy đọc lướt sót từ khóa quan trọng (Careless Reading)" ${item.root_cause?.includes("đọc lướt") ? "selected" : ""}>👀 Bẫy đọc lướt sót từ khóa quan trọng (Careless Reading)</option>
-              <option value="Bẫy đại số / Đổi dấu / Chuyển vế nhầm (Algebra / Sign Trap)" ${item.root_cause?.includes("đại số") ? "selected" : ""}>🧮 Bẫy đại số / Đổi dấu / Chuyển vế nhầm (Algebra / Sign Trap)</option>
-              <option value="Bẫy đọc nhầm câu hỏi (Đề hỏi y nhưng giải ra x)" ${item.root_cause?.includes("nhầm câu hỏi") ? "selected" : ""}>🎯 Bẫy đọc nhầm câu hỏi (Đề hỏi y nhưng giải ra x)</option>
-              <option value="Bẫy làm tròn số / Phân số / Đơn vị đo (Fractions / Units)" ${item.root_cause?.includes("làm tròn") ? "selected" : ""}>📏 Bẫy làm tròn số / Phân số / Đơn vị đo (Fractions / Units)</option>
-              <option value="Chưa nắm chắc công thức / lý thuyết cốt lõi" ${item.root_cause?.includes("công thức") ? "selected" : ""}>📚 Chưa nắm chắc công thức / lý thuyết cốt lõi</option>
-              <option value="Khác" ${item.root_cause === "Khác" ? "selected" : ""}>💡 Bẫy khác...</option>
+              <option value="Bẫy Đảo ngữ & Cấu trúc nhấn mạnh (Inversion / Cleft Sentences)" ${item.root_cause?.includes("Đảo ngữ") ? "selected" : ""}>⚡ Bẫy Đảo ngữ & Cấu trúc nhấn mạnh (Inversion / Cleft Sentences)</option>
+              <option value="Bẫy Collocations & Giới từ cố định (Fixed Prepositions & Collocations)" ${item.root_cause?.includes("Collocations") ? "selected" : ""}>📖 Bẫy Collocations & Giới từ cố định (Fixed Prepositions & Collocations)</option>
+              <option value="Bẫy Cấu tạo từ & Tiền/Hậu tố phủ định (Word Formation & Negative Affixes)" ${item.root_cause?.includes("Cấu tạo từ") ? "selected" : ""}>🔤 Bẫy Cấu tạo từ & Tiền/Hậu tố phủ định (Word Formation & Negative Affixes)</option>
+              <option value="Bẫy Thì, Thể giả định & Câu điều kiện (Subjunctive & Conditionals)" ${item.root_cause?.includes("giả định") ? "selected" : ""}>💡 Bẫy Thì, Thể giả định & Câu điều kiện (Subjunctive & Conditionals)</option>
+              <option value="Bẫy Mệnh đề quan hệ & Rút gọn phân từ (Reduced Clauses & Participles)" ${item.root_cause?.includes("Mệnh đề") ? "selected" : ""}>🧩 Bẫy Mệnh đề quan hệ & Rút gọn phân từ (Reduced Clauses & Participles)</option>
+              <option value="Bẫy Cụm động từ & Thành ngữ đa nghĩa (Phrasal Verbs & Idioms)" ${item.root_cause?.includes("Cụm động từ") ? "selected" : ""}>🎭 Bẫy Cụm động từ & Thành ngữ đa nghĩa (Phrasal Verbs & Idioms)</option>
+              <option value="Bẫy Từ đồng nghĩa tinh tế & Sắc thái ngữ cảnh (Nuances & Context)" ${item.root_cause?.includes("Từ đồng nghĩa") ? "selected" : ""}>🔍 Bẫy Từ đồng nghĩa tinh tế & Sắc thái ngữ cảnh (Nuances & Context)</option>
+              <option value="Bẫy Nghe nhiễu & Bắt từ tương đồng sai ngữ cảnh (Listening Distractors)" ${item.root_cause?.includes("Nghe nhiễu") ? "selected" : ""}>🎧 Bẫy Nghe nhiễu & Bắt từ tương đồng sai ngữ cảnh (Listening Distractors)</option>
+              <option value="Bẫy Đọc suy diễn quá xa / Lạc đề / Khẳng định cực đoan (Out of Scope / Overgeneralization)" ${item.root_cause?.includes("suy diễn") ? "selected" : ""}>🎯 Bẫy Đọc suy diễn quá xa / Lạc đề / Khẳng định cực đoan (Out of Scope / Overgeneralization)</option>
+              <option value="Bẫy Đọc lướt ẩu / Sót từ khóa phủ định (Careless Reading: barely, seldom, not...)" ${item.root_cause?.includes("Đọc lướt") ? "selected" : ""}>👀 Bẫy Đọc lướt ẩu / Sót từ khóa phủ định (Careless Reading: barely, seldom, not...)</option>
+              <option value="Bẫy Biến đổi câu / Sót từ khóa bắt buộc (Key Word Transformation)" ${item.root_cause?.includes("Biến đổi câu") ? "selected" : ""}>✏️ Bẫy Biến đổi câu / Sót từ khóa bắt buộc (Key Word Transformation)</option>
+              <option value="Bẫy Điền từ đoạn văn & Liên từ logic (Cloze Test & Discourse Markers)" ${item.root_cause?.includes("Điền từ") ? "selected" : ""}>✍️ Bẫy Điền từ đoạn văn & Liên từ logic (Cloze Test & Discourse Markers)</option>
+              <option value="Chưa nắm chắc cấu trúc / hiện tượng ngữ pháp cốt lõi" ${item.root_cause?.includes("cấu trúc") || item.root_cause?.includes("công thức") ? "selected" : ""}>📚 Chưa nắm chắc cấu trúc / hiện tượng ngữ pháp cốt lõi</option>
+              <option value="Lỗi sai / Bẫy khác" ${item.root_cause === "Lỗi sai / Bẫy khác" || item.root_cause === "Khác" ? "selected" : ""}>💡 Lỗi sai / Bẫy đề thi khác...</option>
             </select>
           </div>
           <div class="full-width">
@@ -2670,7 +2674,7 @@ function renderErrorLogs() {
       </div>
 
       <div class="card-trap-content">
-        <span class="card-trap-tag">${escapeHtml(item.root_cause || "Bẫy SAT")}</span>
+        <span class="card-trap-tag">${escapeHtml(item.root_cause || "Bẫy đề thi HSG")}</span>
         <span>${escapeHtml(item.trap_detail || "")}</span>
       </div>
 
@@ -2940,7 +2944,7 @@ function openMandatoryReflectionModal(q, qState) {
     ? wrongs.map((w, idx) => `Lần ${idx + 1}: [${w}]`).join("  •  ")
     : "Có lần thử trước đó chưa chính xác";
 
-  const hint1 = q.tier1_hint || q.level1_tip || "Đọc kỹ từ khóa, ngữ cảnh và xác định bẫy SAT.";
+  const hint1 = q.tier1_hint || q.level1_tip || "Đọc kỹ từ khóa, ngữ cảnh và xác định lỗi sai phổ biến / cạm bẫy câu hỏi.";
   const hint2 = q.tier2_hint || q.level2_hint || "";
   DOM.reflHintBox.innerHTML = `<strong>💡 Gợi ý Tầng 1:</strong> ${hint1}${hint2 ? `<br><strong style="margin-top: 6px; display: inline-block;">🔍 Manh mối Tầng 2:</strong> ${hint2}` : ""}`;
 
@@ -2964,7 +2968,7 @@ function saveMandatoryReflection(advanceToNext = true) {
   const vocab = DOM.inputReflVocab ? DOM.inputReflVocab.value.trim() : "";
 
   if (!trap) {
-    alert("Vui lòng chọn nhóm bẫy SAT em đã gặp phải!");
+    alert("Vui lòng chọn lỗi sai phổ biến / nhóm bẫy đề thi HSG em đã gặp phải!");
     DOM.selectReflTrap.focus();
     return;
   }
@@ -3164,7 +3168,7 @@ async function generateClientExcelBlob(studentName, summary) {
       if (wsErr) {
         // Headers in Row 1
         const headers = [
-          "STT", "Mã câu", "Module", "Chủ đề / Kỹ năng", "Nhóm bẫy SAT",
+          "STT", "Mã câu", "Module", "Chủ đề / Kỹ năng", "Lỗi sai / Nhóm bẫy HSG",
           "Phân tích nguyên nhân & Bài học", "Ghi chú tư duy", "Từ mới / Thuật ngữ",
           "Tình trạng", "Thời gian"
         ];
@@ -3188,7 +3192,7 @@ async function generateClientExcelBlob(studentName, summary) {
           wsErr[`B${r}`] = { t: "s", v: String(e.q_label || `Q${e.question_id || ""}`) };
           wsErr[`C${r}`] = { t: "s", v: String(e.module || "") };
           wsErr[`D${r}`] = { t: "s", v: String(e.skill || "") };
-          wsErr[`E${r}`] = { t: "s", v: String(e.root_cause || "Bẫy SAT") };
+          wsErr[`E${r}`] = { t: "s", v: String(e.root_cause || "Bẫy đề thi HSG") };
           wsErr[`F${r}`] = { t: "s", v: String(e.trap_detail || "") };
           wsErr[`G${r}`] = { t: "s", v: String(e.student_notes || "") };
           wsErr[`H${r}`] = { t: "s", v: String(e.vocabulary || "") };
