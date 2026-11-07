@@ -21,6 +21,9 @@ const TESTS_MANIFEST_DEFAULT = [
     poster: "poster.png",
     total_questions: 105,
     time_minutes: 150,
+    has_audio: true,
+    audio_part1: "audio/part1.mp3",
+    audio_part2: "audio/part2.mp3",
     storageKey: "hsg_24hanoi_student_state_v1",
     description: "Đề thi chính thức HSG Tiếng Anh Lớp 9 Thành phố Hà Nội năm 2024 kèm Audio Listening Part 1 & 2, hướng dẫn giải thích 4 tầng Socratic, bẫy ngữ pháp và Mermaid Mindmap."
   }
@@ -139,6 +142,9 @@ const DOM = {
   audioscriptPanel: document.getElementById("audioscript-panel"),
   audioscriptBody: document.getElementById("audioscript-body"),
   btnCloseAudioscript: document.getElementById("btn-close-audioscript"),
+  btnHeaderAudio: document.getElementById("btn-header-audio"),
+  headerAudioIcon: document.getElementById("header-audio-icon"),
+  headerAudioText: document.getElementById("header-audio-text"),
 
   // Home Page Elements
   btnHeroEnterTest: document.getElementById("btn-hero-enter-test"),
@@ -2929,24 +2935,38 @@ const AudioController = {
   init() {
     if (!DOM.listeningAudio) return;
 
+    // Play/Pause button in Audio Bar
     if (DOM.btnAudioPlayPause) {
       DOM.btnAudioPlayPause.addEventListener("click", () => {
-        if (DOM.listeningAudio.paused) {
-          DOM.listeningAudio.play().catch(e => console.warn("Audio play prevented:", e));
-        } else {
-          DOM.listeningAudio.pause();
-        }
+        AudioController.togglePlay();
+      });
+    }
+
+    // Play/Pause button in Header Tools
+    if (DOM.btnHeaderAudio) {
+      DOM.btnHeaderAudio.addEventListener("click", () => {
+        AudioController.togglePlay();
       });
     }
 
     DOM.listeningAudio.addEventListener("play", () => {
       if (DOM.audioPlayIcon) DOM.audioPlayIcon.textContent = "⏸";
       if (DOM.btnAudioPlayPause) DOM.btnAudioPlayPause.classList.add("playing");
+      if (DOM.btnHeaderAudio) {
+        DOM.btnHeaderAudio.classList.add("playing");
+        if (DOM.headerAudioIcon) DOM.headerAudioIcon.textContent = "⏸";
+        if (DOM.headerAudioText) DOM.headerAudioText.textContent = "Đang phát";
+      }
     });
 
     DOM.listeningAudio.addEventListener("pause", () => {
       if (DOM.audioPlayIcon) DOM.audioPlayIcon.textContent = "▶";
       if (DOM.btnAudioPlayPause) DOM.btnAudioPlayPause.classList.remove("playing");
+      if (DOM.btnHeaderAudio) {
+        DOM.btnHeaderAudio.classList.remove("playing");
+        if (DOM.headerAudioIcon) DOM.headerAudioIcon.textContent = "🎧";
+        if (DOM.headerAudioText) DOM.headerAudioText.textContent = "Audio";
+      }
     });
 
     DOM.listeningAudio.addEventListener("timeupdate", () => {
@@ -2996,23 +3016,42 @@ const AudioController = {
     }
   },
 
+  togglePlay() {
+    if (!DOM.listeningAudio) return;
+    if (DOM.listeningAudio.paused) {
+      DOM.listeningAudio.play().catch(e => console.warn("Audio play prevented:", e));
+    } else {
+      DOM.listeningAudio.pause();
+    }
+  },
+
   syncForQuestion(q) {
     if (!DOM.audioPlayerBar) return;
-    if (q && q.audio_track) {
+    const audioSrc = q ? (q.audio_track || q.audio_file || (q.has_audio ? "audio/part1.mp3" : null)) : null;
+    const transcriptText = q ? (q.audioscript || q.transcript || "") : "";
+    const audioTitle = q ? (q.audio_title || (audioSrc && audioSrc.includes("part2") ? "Phần 2: Nghe bài giảng English as a Global Language (Câu 7 - 15)" : "Phần 1: Nghe hội thoại 3 đoạn trích (Câu 1 - 6)")) : "";
+
+    if (audioSrc) {
       DOM.audioPlayerBar.classList.remove("hidden");
+      if (DOM.btnHeaderAudio) DOM.btnHeaderAudio.classList.remove("hidden");
       if (DOM.audioTrackTitle) {
-        DOM.audioTrackTitle.textContent = q.audio_title || "Audio Listening Bài Thi";
+        DOM.audioTrackTitle.textContent = audioTitle;
       }
       if (DOM.audioscriptBody) {
-        DOM.audioscriptBody.innerHTML = (q.audioscript || "").replace(/\n/g, "<br>");
+        DOM.audioscriptBody.innerHTML = transcriptText.replace(/\n/g, "<br>");
       }
       const currentSrc = DOM.listeningAudio.getAttribute("src") || "";
-      if (currentSrc !== q.audio_track) {
-        DOM.listeningAudio.src = q.audio_track;
+      if (currentSrc !== audioSrc) {
+        const wasPlaying = !DOM.listeningAudio.paused;
+        DOM.listeningAudio.src = audioSrc;
         DOM.listeningAudio.load();
+        if (wasPlaying) {
+          DOM.listeningAudio.play().catch(() => {});
+        }
       }
     } else {
       DOM.audioPlayerBar.classList.add("hidden");
+      if (DOM.btnHeaderAudio) DOM.btnHeaderAudio.classList.add("hidden");
       if (DOM.audioscriptPanel) DOM.audioscriptPanel.classList.add("hidden");
       if (DOM.listeningAudio && !DOM.listeningAudio.paused) {
         DOM.listeningAudio.pause();

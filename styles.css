@@ -6679,16 +6679,16 @@ body.resizing-split iframe {
 
 /* ================= AUDIO PLAYER BAR (LISTENING SECTION) ================= */
 .audio-player-bar {
-  background: linear-gradient(135deg, #0f172a 0%, #1e1b4b 100%);
+  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
   color: #ffffff;
-  padding: 10px 18px;
+  padding: 12px 18px;
   border-radius: 12px;
   margin-bottom: 16px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
   box-shadow: 0 4px 18px rgba(15, 23, 42, 0.25);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(255, 255, 255, 0.15);
   animation: audioBarSlideDown 0.3s ease-out;
 }
 
@@ -6701,6 +6701,7 @@ body.resizing-split iframe {
   display: none !important;
 }
 
+.audio-track-info,
 .audio-info {
   display: flex;
   align-items: center;
@@ -6708,13 +6709,16 @@ body.resizing-split iframe {
 }
 
 .audio-badge {
-  background: #4f46e5;
+  background: #2563eb;
   color: #ffffff;
-  font-size: 10.5px;
+  font-size: 11px;
   font-weight: 800;
-  padding: 2px 8px;
+  padding: 3px 8px;
   border-radius: 6px;
   letter-spacing: 0.5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
 }
 
 .audio-title {
@@ -6727,49 +6731,72 @@ body.resizing-split iframe {
   text-overflow: ellipsis;
 }
 
+.audio-controls-row,
 .audio-controls {
   display: flex;
   align-items: center;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
+.audio-btn.btn-play,
 .btn-audio-play {
-  width: 36px;
-  height: 36px;
+  width: 38px;
+  height: 38px;
   border-radius: 50%;
   background: #38bdf8;
   color: #0f172a;
   border: none;
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 900;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.15s ease;
+  transition: all 0.2s ease;
   flex-shrink: 0;
+  box-shadow: 0 2px 8px rgba(56, 189, 248, 0.35);
 }
 
+.audio-btn.btn-play:hover,
 .btn-audio-play:hover {
   background: #7dd3fc;
-  transform: scale(1.05);
+  transform: scale(1.06);
 }
 
+.audio-btn.btn-play.playing,
+.btn-audio-play.playing {
+  background: #f87171;
+  color: #ffffff;
+  box-shadow: 0 2px 8px rgba(248, 113, 113, 0.45);
+}
+
+.audio-progress-wrap,
 .audio-time-slider {
   display: flex;
   align-items: center;
   gap: 8px;
   flex: 1;
+  min-width: 180px;
   font-family: 'JetBrains Mono', monospace;
   font-size: 11.5px;
   color: #cbd5e1;
 }
 
+.audio-time {
+  font-family: monospace;
+  font-size: 12px;
+  color: #cbd5e1;
+  min-width: 40px;
+  text-align: center;
+}
+
+.audio-scrubber,
 .audio-time-slider input[type="range"] {
   flex: 1;
   accent-color: #38bdf8;
   cursor: pointer;
-  height: 5px;
+  height: 6px;
 }
 
 .audio-speed-select {
@@ -6783,6 +6810,12 @@ body.resizing-split iframe {
   cursor: pointer;
 }
 
+.audio-speed-select option {
+  background: #1e293b;
+  color: #ffffff;
+}
+
+.btn-audioscript-toggle,
 .btn-audio-transcript {
   background: rgba(99, 102, 241, 0.25);
   color: #c7d2fe;
@@ -6796,9 +6829,36 @@ body.resizing-split iframe {
   white-space: nowrap;
 }
 
+.btn-audioscript-toggle:hover,
 .btn-audio-transcript:hover {
-  background: rgba(99, 102, 241, 0.45);
+  background: rgba(99, 102, 241, 0.5);
   color: #ffffff;
+}
+
+/* Header Audio Button in Tool Bar */
+.btn-audio-tool {
+  background: #e0f2fe !important;
+  color: #0284c7 !important;
+  border-color: #bae6fd !important;
+  transition: all 0.2s ease !important;
+}
+
+.btn-audio-tool:hover {
+  background: #bae6fd !important;
+  color: #0369a1 !important;
+}
+
+.btn-audio-tool.playing {
+  background: #fee2e2 !important;
+  color: #dc2626 !important;
+  border-color: #fca5a5 !important;
+  animation: pulseAudioGlow 1.8s infinite;
+}
+
+@keyframes pulseAudioGlow {
+  0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.4); }
+  50% { transform: scale(1.05); box-shadow: 0 0 0 6px rgba(239, 68, 68, 0); }
+  100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
 }
 
 /* ================= AUDIOSCRIPT PANEL ================= */
@@ -6806,7 +6866,7 @@ body.resizing-split iframe {
   background: #ffffff;
   border: 1px solid #cbd5e1;
   border-radius: 12px;
-  margin-bottom: 16px;
+  margin-top: 10px;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
   animation: fadeIn 0.25s ease-out;
@@ -6825,6 +6885,7 @@ body.resizing-split iframe {
   border-bottom: 1px solid #e2e8f0;
 }
 
+.audioscript-header strong,
 .audioscript-header h4 {
   font-size: 13px;
   font-weight: 700;
@@ -6838,6 +6899,13 @@ body.resizing-split iframe {
   font-size: 16px;
   color: #64748b;
   cursor: pointer;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.audioscript-header button:hover {
+  background: #e2e8f0;
+  color: #0f172a;
 }
 
 .audioscript-body {

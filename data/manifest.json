@@ -11,6 +11,9 @@
     "poster": "poster.png",
     "total_questions": 105,
     "time_minutes": 150,
+    "has_audio": true,
+    "audio_part1": "audio/part1.mp3",
+    "audio_part2": "audio/part2.mp3",
     "storageKey": "hsg_24hanoi_student_state_v1",
     "description": "Đề thi chính thức HSG Tiếng Anh Lớp 9 Thành phố Hà Nội năm 2024 kèm Audio Listening Part 1 & 2, hướng dẫn giải thích 4 tầng Socratic, bẫy ngữ pháp và Mermaid Mindmap."
   }

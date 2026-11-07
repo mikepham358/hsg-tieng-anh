@@ -210,7 +210,11 @@
       "solution_steps": "Transcript: 'Haven’t you always emphasised... that he needs to be independent? - I suppose so...' -> Cả hai vợ chồng đều nhất trí rằng con trai cần tự lập (self-sufficient). Đáp án B là chính xác.",
       "mermaid_diagram": "flowchart TD\nA[\"Nghe đoạn thoại vợ chồng\"] --> B{\"Người vợ hỏi:\"}\nB --> C[\"Haven't you always emphasised that he needs to be independent?\"]\nC --> D[\"Người chồng: 'I suppose so...'\"]\nD --> E[\"Cả hai cùng đồng ý: Con trai cần tự lập (self-sufficient)\"]\nE --> F[\"Chốt đáp án B\"]",
       "audio_file": "audio/part1.mp3",
-      "transcript": "Extract 1.\nWoman: Now George, calm down. I know you always had high hopes for Rob, but that doesn’t mean he has to follow in your footsteps.\nMan: But he could have done anything! Why journalism?\nWoman: Haven’t you always emphasised, and quite rightly, that he needs to be independent? What’s wrong with letting him find his own feet?\nMan: I suppose so, but in journalism? These days, you need credible qualifications to succeed in life.\nWoman: Well, George, there are a great number of people with impressive degrees who end up doing ordinary jobs. What counts is motivation and drive, and Rob has got bags of that. After all, he is a mature, well-balanced individual who doesn’t act on impulse. I’m sure it was a well-thought-out decision."
+      "transcript": "Extract 1.\nWoman: Now George, calm down. I know you always had high hopes for Rob, but that doesn’t mean he has to follow in your footsteps.\nMan: But he could have done anything! Why journalism?\nWoman: Haven’t you always emphasised, and quite rightly, that he needs to be independent? What’s wrong with letting him find his own feet?\nMan: I suppose so, but in journalism? These days, you need credible qualifications to succeed in life.\nWoman: Well, George, there are a great number of people with impressive degrees who end up doing ordinary jobs. What counts is motivation and drive, and Rob has got bags of that. After all, he is a mature, well-balanced individual who doesn’t act on impulse. I’m sure it was a well-thought-out decision.",
+      "has_audio": true,
+      "audio_track": "audio/part1.mp3",
+      "audio_title": "Phần 1: Nghe hội thoại 3 đoạn trích (Part 1 - Questions 1 to 6)",
+      "audioscript": "Extract 1.\nWoman: Now George, calm down. I know you always had high hopes for Rob, but that doesn’t mean he has to follow in your footsteps.\nMan: But he could have done anything! Why journalism?\nWoman: Haven’t you always emphasised, and quite rightly, that he needs to be independent? What’s wrong with letting him find his own feet?\nMan: I suppose so, but in journalism? These days, you need credible qualifications to succeed in life.\nWoman: Well, George, there are a great number of people with impressive degrees who end up doing ordinary jobs. What counts is motivation and drive, and Rob has got bags of that. After all, he is a mature, well-balanced individual who doesn’t act on impulse. I’m sure it was a well-thought-out decision."
     },
     {
       "id": 2,
@@ -249,7 +253,11 @@
       "solution_steps": "Người vợ có cái nhìn thực tế (realistic) vì bà hiểu rõ bằng cấp ấn tượng không đảm bảo việc làm tốt, mà động lực và sự nỗ lực thực tế mới quyết định. Đáp án B.",
       "mermaid_diagram": "flowchart TD\nA[\"So sánh thái độ 2 người\"] --> B[\"Người chồng: Cần bằng cấp danh giá (qualifications)\"]\nA --> C[\"Người vợ: Nhìn nhận thực tế cuộc sống\"]\nC --> D[\"Bằng cấp không đảm bảo, động lực & kỹ năng mới cốt lõi\"]\nD --> E[\"Thái độ: Realistic (Thực tế)\"] --> F[\"Đáp án B\"]",
       "audio_file": "audio/part1.mp3",
-      "transcript": "Extract 1.\nWoman: Now George, calm down. I know you always had high hopes for Rob, but that doesn’t mean he has to follow in your footsteps.\nMan: But he could have done anything! Why journalism?\nWoman: Haven’t you always emphasised, and quite rightly, that he needs to be independent? What’s wrong with letting him find his own feet?\nMan: I suppose so, but in journalism? These days, you need credible qualifications to succeed in life.\nWoman: Well, George, there are a great number of people with impressive degrees who end up doing ordinary jobs. What counts is motivation and drive, and Rob has got bags of that. After all, he is a mature, well-balanced individual who doesn’t act on impulse. I’m sure it was a well-thought-out decision."
+      "transcript": "Extract 1.\nWoman: Now George, calm down. I know you always had high hopes for Rob, but that doesn’t mean he has to follow in your footsteps.\nMan: But he could have done anything! Why journalism?\nWoman: Haven’t you always emphasised, and quite rightly, that he needs to be independent? What’s wrong with letting him find his own feet?\nMan: I suppose so, but in journalism? These days, you need credible qualifications to succeed in life.\nWoman: Well, George, there are a great number of people with impressive degrees who end up doing ordinary jobs. What counts is motivation and drive, and Rob has got bags of that. After all, he is a mature, well-balanced individual who doesn’t act on impulse. I’m sure it was a well-thought-out decision.",
+      "has_audio": true,
+      "audio_track": "audio/part1.mp3",
+      "audio_title": "Phần 1: Nghe hội thoại 3 đoạn trích (Part 1 - Questions 1 to 6)",
+      "audioscript": "Extract 1.\nWoman: Now George, calm down. I know you always had high hopes for Rob, but that doesn’t mean he has to follow in your footsteps.\nMan: But he could have done anything! Why journalism?\nWoman: Haven’t you always emphasised, and quite rightly, that he needs to be independent? What’s wrong with letting him find his own feet?\nMan: I suppose so, but in journalism? These days, you need credible qualifications to succeed in life.\nWoman: Well, George, there are a great number of people with impressive degrees who end up doing ordinary jobs. What counts is motivation and drive, and Rob has got bags of that. After all, he is a mature, well-balanced individual who doesn’t act on impulse. I’m sure it was a well-thought-out decision."
     },
     {
       "id": 3,
@@ -288,7 +296,11 @@
       "solution_steps": "Mù màu hoàn toàn 'extremely rare' (1/33.000), trong khi mù màu một phần rất phổ biến (7% nam giới). Do đó nó ảnh hưởng ít người hơn (affects fewer people). Đáp án C.",
       "mermaid_diagram": "flowchart TD\nA[\"So sánh 2 dạng mù màu\"] --> B[\"Total color blindness: 'extremely rare' (~1/33,000)\"]\nA --> C[\"Partial color blindness: 'most common' (~7% men)\"]\nB & C --> D[\"Total mù màu ít người mắc hơn nhiều (fewer people)\"]\nD --> E[\"Đáp án C\"]",
       "audio_file": "audio/part1.mp3",
-      "transcript": "Extract 2.\nSpecialist: Total color blindness, or achromatopsia, is a condition where people see the world only in shades of grey, black and white. This is a far more serious defect than partial color blindness, unfortunately extremely rare, affecting approximately one in thirty-three thousand people. Unlike partial color blindness, it affects both men and women equally. Dichromatism is the most common form of color blindness, affecting about 7% of men and less than 1% of women. Consequently, many people live their lives without even being aware that they are colorblind. Some occupations are barred to them – airline pilots, train drivers, electricians and some medical professions, because distinguishing between different colored lights and wires is critical for safety."
+      "transcript": "Extract 2.\nSpecialist: Total color blindness, or achromatopsia, is a condition where people see the world only in shades of grey, black and white. This is a far more serious defect than partial color blindness, unfortunately extremely rare, affecting approximately one in thirty-three thousand people. Unlike partial color blindness, it affects both men and women equally. Dichromatism is the most common form of color blindness, affecting about 7% of men and less than 1% of women. Consequently, many people live their lives without even being aware that they are colorblind. Some occupations are barred to them – airline pilots, train drivers, electricians and some medical professions, because distinguishing between different colored lights and wires is critical for safety.",
+      "has_audio": true,
+      "audio_track": "audio/part1.mp3",
+      "audio_title": "Phần 1: Nghe hội thoại 3 đoạn trích (Part 1 - Questions 1 to 6)",
+      "audioscript": "Extract 2.\nSpecialist: Total color blindness, or achromatopsia, is a condition where people see the world only in shades of grey, black and white. This is a far more serious defect than partial color blindness, unfortunately extremely rare, affecting approximately one in thirty-three thousand people. Unlike partial color blindness, it affects both men and women equally. Dichromatism is the most common form of color blindness, affecting about 7% of men and less than 1% of women. Consequently, many people live their lives without even being aware that they are colorblind. Some occupations are barred to them – airline pilots, train drivers, electricians and some medical professions, because distinguishing between different colored lights and wires is critical for safety."
     },
     {
       "id": 4,
@@ -327,7 +339,11 @@
       "solution_steps": "Chuyên gia nêu rõ các nghề như phi công, lái tàu, thợ điện không nhận người mù màu ('occupations are barred to them'). Do đó đáp án A đúng.",
       "mermaid_diagram": "flowchart TD\nA[\"Tác động của Color blindness\"] --> B[\"Nghe thấy: 'Some occupations are barred to them'\"]\nB --> C[\"Phi công, lái tàu, thợ điện không thể hành nghề\"]\nC --> D[\"Exempt / exclude from some types of employment\"]\nD --> E[\"Đáp án A\"]",
       "audio_file": "audio/part1.mp3",
-      "transcript": "Extract 2.\nSpecialist: Total color blindness, or achromatopsia, is a condition where people see the world only in shades of grey, black and white. This is a far more serious defect than partial color blindness, unfortunately extremely rare, affecting approximately one in thirty-three thousand people. Unlike partial color blindness, it affects both men and women equally. Dichromatism is the most common form of color blindness, affecting about 7% of men and less than 1% of women. Consequently, many people live their lives without even being aware that they are colorblind. Some occupations are barred to them – airline pilots, train drivers, electricians and some medical professions, because distinguishing between different colored lights and wires is critical for safety."
+      "transcript": "Extract 2.\nSpecialist: Total color blindness, or achromatopsia, is a condition where people see the world only in shades of grey, black and white. This is a far more serious defect than partial color blindness, unfortunately extremely rare, affecting approximately one in thirty-three thousand people. Unlike partial color blindness, it affects both men and women equally. Dichromatism is the most common form of color blindness, affecting about 7% of men and less than 1% of women. Consequently, many people live their lives without even being aware that they are colorblind. Some occupations are barred to them – airline pilots, train drivers, electricians and some medical professions, because distinguishing between different colored lights and wires is critical for safety.",
+      "has_audio": true,
+      "audio_track": "audio/part1.mp3",
+      "audio_title": "Phần 1: Nghe hội thoại 3 đoạn trích (Part 1 - Questions 1 to 6)",
+      "audioscript": "Extract 2.\nSpecialist: Total color blindness, or achromatopsia, is a condition where people see the world only in shades of grey, black and white. This is a far more serious defect than partial color blindness, unfortunately extremely rare, affecting approximately one in thirty-three thousand people. Unlike partial color blindness, it affects both men and women equally. Dichromatism is the most common form of color blindness, affecting about 7% of men and less than 1% of women. Consequently, many people live their lives without even being aware that they are colorblind. Some occupations are barred to them – airline pilots, train drivers, electricians and some medical professions, because distinguishing between different colored lights and wires is critical for safety."
     },
     {
       "id": 5,
@@ -366,7 +382,11 @@
       "solution_steps": "Bài giảng giải thích việc không tìm được việc làm ('unsuccessful in the pursuit of employment' / 'high seasonal unemployment') khiến họ phải bỏ xứ ra đi. Đáp án B.",
       "mermaid_diagram": "flowchart TD\nA[\"Lý do di cư của người dân TK 19\"] --> B[\"'unsuccessful in the pursuit of employment'\"]\nB --> C[\"'high rates of seasonal unemployment'\"]\nC --> D[\"Không thể tìm được việc làm (inability to find work)\"]\nD --> E[\"Đáp án B\"]",
       "audio_file": "audio/part1.mp3",
-      "transcript": "Extract 3.\nSociologist: As the 19th century progressed, more and more farmers who relied on the adverse terms of credit advanced by merchants found themselves in heavy debt. The fact that many individuals were unsuccessful in the pursuit of employment is shown by the high rates of seasonal unemployment, forcing many families to pack up and leave their homes in search of work elsewhere. Upper Canadians, for example, who mainly came from the British Isles, had been exposed in their native countries to traditional values that emphasized community and mutual assistance. Their attitudes to work and economic survival were deeply rooted in their cultural backgrounds, rather than in an individualistic quest for maximum personal profit."
+      "transcript": "Extract 3.\nSociologist: As the 19th century progressed, more and more farmers who relied on the adverse terms of credit advanced by merchants found themselves in heavy debt. The fact that many individuals were unsuccessful in the pursuit of employment is shown by the high rates of seasonal unemployment, forcing many families to pack up and leave their homes in search of work elsewhere. Upper Canadians, for example, who mainly came from the British Isles, had been exposed in their native countries to traditional values that emphasized community and mutual assistance. Their attitudes to work and economic survival were deeply rooted in their cultural backgrounds, rather than in an individualistic quest for maximum personal profit.",
+      "has_audio": true,
+      "audio_track": "audio/part1.mp3",
+      "audio_title": "Phần 1: Nghe hội thoại 3 đoạn trích (Part 1 - Questions 1 to 6)",
+      "audioscript": "Extract 3.\nSociologist: As the 19th century progressed, more and more farmers who relied on the adverse terms of credit advanced by merchants found themselves in heavy debt. The fact that many individuals were unsuccessful in the pursuit of employment is shown by the high rates of seasonal unemployment, forcing many families to pack up and leave their homes in search of work elsewhere. Upper Canadians, for example, who mainly came from the British Isles, had been exposed in their native countries to traditional values that emphasized community and mutual assistance. Their attitudes to work and economic survival were deeply rooted in their cultural backgrounds, rather than in an individualistic quest for maximum personal profit."
     },
     {
       "id": 6,
@@ -405,7 +425,11 @@
       "solution_steps": "Speaker nêu: 'deeply rooted in their cultural backgrounds' -> Thái độ làm việc dựa trên nguồn gốc, truyền thống cộng đồng (backgrounds). Đáp án A.",
       "mermaid_diagram": "flowchart TD\nA[\"Thái độ với công việc bắt nguồn từ đâu?\"] --> B[\"'deeply rooted in their cultural backgrounds'\"]\nB --> C[\"'rather than in an individualistic quest for profit'\"]\nC --> D[\"Xuất phát từ nền tảng văn hóa / xuất thân (backgrounds)\"]\nD --> E[\"Đáp án A\"]",
       "audio_file": "audio/part1.mp3",
-      "transcript": "Extract 3.\nSociologist: As the 19th century progressed, more and more farmers who relied on the adverse terms of credit advanced by merchants found themselves in heavy debt. The fact that many individuals were unsuccessful in the pursuit of employment is shown by the high rates of seasonal unemployment, forcing many families to pack up and leave their homes in search of work elsewhere. Upper Canadians, for example, who mainly came from the British Isles, had been exposed in their native countries to traditional values that emphasized community and mutual assistance. Their attitudes to work and economic survival were deeply rooted in their cultural backgrounds, rather than in an individualistic quest for maximum personal profit."
+      "transcript": "Extract 3.\nSociologist: As the 19th century progressed, more and more farmers who relied on the adverse terms of credit advanced by merchants found themselves in heavy debt. The fact that many individuals were unsuccessful in the pursuit of employment is shown by the high rates of seasonal unemployment, forcing many families to pack up and leave their homes in search of work elsewhere. Upper Canadians, for example, who mainly came from the British Isles, had been exposed in their native countries to traditional values that emphasized community and mutual assistance. Their attitudes to work and economic survival were deeply rooted in their cultural backgrounds, rather than in an individualistic quest for maximum personal profit.",
+      "has_audio": true,
+      "audio_track": "audio/part1.mp3",
+      "audio_title": "Phần 1: Nghe hội thoại 3 đoạn trích (Part 1 - Questions 1 to 6)",
+      "audioscript": "Extract 3.\nSociologist: As the 19th century progressed, more and more farmers who relied on the adverse terms of credit advanced by merchants found themselves in heavy debt. The fact that many individuals were unsuccessful in the pursuit of employment is shown by the high rates of seasonal unemployment, forcing many families to pack up and leave their homes in search of work elsewhere. Upper Canadians, for example, who mainly came from the British Isles, had been exposed in their native countries to traditional values that emphasized community and mutual assistance. Their attitudes to work and economic survival were deeply rooted in their cultural backgrounds, rather than in an individualistic quest for maximum personal profit."
     },
     {
       "id": 7,
@@ -436,7 +460,11 @@
       "solution_steps": "Đáp án: world language (ngôn ngữ thế giới).",
       "mermaid_diagram": "flowchart LR\nA[\"Nghe audio Part 2\"] --> B[\"Bắt từ khóa trong câu\"]\nB --> C[\"Đối chiếu ngữ pháp & số từ\"]\nC --> D[\"Điền chính xác: 'world language'\"]",
       "audio_file": "audio/part2.mp3",
-      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
+      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones.",
+      "has_audio": true,
+      "audio_track": "audio/part2.mp3",
+      "audio_title": "Phần 2: Nghe bài giảng English as a Global Language (Part 2 - Questions 7 to 15)",
+      "audioscript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
     },
     {
       "id": 8,
@@ -467,7 +495,11 @@
       "solution_steps": "Đáp án: voyages of discovery.",
       "mermaid_diagram": "flowchart LR\nA[\"Nghe audio Part 2\"] --> B[\"Bắt từ khóa trong câu\"]\nB --> C[\"Đối chiếu ngữ pháp & số từ\"]\nC --> D[\"Điền chính xác: 'voyages of discovery'\"]",
       "audio_file": "audio/part2.mp3",
-      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
+      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones.",
+      "has_audio": true,
+      "audio_track": "audio/part2.mp3",
+      "audio_title": "Phần 2: Nghe bài giảng English as a Global Language (Part 2 - Questions 7 to 15)",
+      "audioscript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
     },
     {
       "id": 9,
@@ -499,7 +531,11 @@
       "solution_steps": "Đáp án: two (2) factors.",
       "mermaid_diagram": "flowchart LR\nA[\"Nghe audio Part 2\"] --> B[\"Bắt từ khóa trong câu\"]\nB --> C[\"Đối chiếu ngữ pháp & số từ\"]\nC --> D[\"Điền chính xác: 'two factors'\"]",
       "audio_file": "audio/part2.mp3",
-      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
+      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones.",
+      "has_audio": true,
+      "audio_track": "audio/part2.mp3",
+      "audio_title": "Phần 2: Nghe bài giảng English as a Global Language (Part 2 - Questions 7 to 15)",
+      "audioscript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
     },
     {
       "id": 10,
@@ -530,7 +566,11 @@
       "solution_steps": "Đáp án: mother tongue.",
       "mermaid_diagram": "flowchart LR\nA[\"Nghe audio Part 2\"] --> B[\"Bắt từ khóa trong câu\"]\nB --> C[\"Đối chiếu ngữ pháp & số từ\"]\nC --> D[\"Điền chính xác: 'mother tongue'\"]",
       "audio_file": "audio/part2.mp3",
-      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
+      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones.",
+      "has_audio": true,
+      "audio_track": "audio/part2.mp3",
+      "audio_title": "Phần 2: Nghe bài giảng English as a Global Language (Part 2 - Questions 7 to 15)",
+      "audioscript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
     },
     {
       "id": 11,
@@ -561,7 +601,11 @@
       "solution_steps": "Đáp án: determine.",
       "mermaid_diagram": "flowchart LR\nA[\"Nghe audio Part 2\"] --> B[\"Bắt từ khóa trong câu\"]\nB --> C[\"Đối chiếu ngữ pháp & số từ\"]\nC --> D[\"Điền chính xác: 'determine'\"]",
       "audio_file": "audio/part2.mp3",
-      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
+      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones.",
+      "has_audio": true,
+      "audio_track": "audio/part2.mp3",
+      "audio_title": "Phần 2: Nghe bài giảng English as a Global Language (Part 2 - Questions 7 to 15)",
+      "audioscript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
     },
     {
       "id": 12,
@@ -592,7 +636,11 @@
       "solution_steps": "Đáp án: inherently.",
       "mermaid_diagram": "flowchart LR\nA[\"Nghe audio Part 2\"] --> B[\"Bắt từ khóa trong câu\"]\nB --> C[\"Đối chiếu ngữ pháp & số từ\"]\nC --> D[\"Điền chính xác: 'inherently'\"]",
       "audio_file": "audio/part2.mp3",
-      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
+      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones.",
+      "has_audio": true,
+      "audio_track": "audio/part2.mp3",
+      "audio_title": "Phần 2: Nghe bài giảng English as a Global Language (Part 2 - Questions 7 to 15)",
+      "audioscript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
     },
     {
       "id": 13,
@@ -623,7 +671,11 @@
       "solution_steps": "Đáp án: objective standards.",
       "mermaid_diagram": "flowchart LR\nA[\"Nghe audio Part 2\"] --> B[\"Bắt từ khóa trong câu\"]\nB --> C[\"Đối chiếu ngữ pháp & số từ\"]\nC --> D[\"Điền chính xác: 'objective standards'\"]",
       "audio_file": "audio/part2.mp3",
-      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
+      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones.",
+      "has_audio": true,
+      "audio_track": "audio/part2.mp3",
+      "audio_title": "Phần 2: Nghe bài giảng English as a Global Language (Part 2 - Questions 7 to 15)",
+      "audioscript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
     },
     {
       "id": 14,
@@ -655,7 +707,11 @@
       "solution_steps": "Đáp án: (highly) complex.",
       "mermaid_diagram": "flowchart LR\nA[\"Nghe audio Part 2\"] --> B[\"Bắt từ khóa trong câu\"]\nB --> C[\"Đối chiếu ngữ pháp & số từ\"]\nC --> D[\"Điền chính xác: 'complex'\"]",
       "audio_file": "audio/part2.mp3",
-      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
+      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones.",
+      "has_audio": true,
+      "audio_track": "audio/part2.mp3",
+      "audio_title": "Phần 2: Nghe bài giảng English as a Global Language (Part 2 - Questions 7 to 15)",
+      "audioscript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
     },
     {
       "id": 15,
@@ -686,7 +742,11 @@
       "solution_steps": "Đáp án: dependent.",
       "mermaid_diagram": "flowchart LR\nA[\"Nghe audio Part 2\"] --> B[\"Bắt từ khóa trong câu\"]\nB --> C[\"Đối chiếu ngữ pháp & số từ\"]\nC --> D[\"Điền chính xác: 'dependent'\"]",
       "audio_file": "audio/part2.mp3",
-      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
+      "transcript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones.",
+      "has_audio": true,
+      "audio_track": "audio/part2.mp3",
+      "audio_title": "Phần 2: Nghe bài giảng English as a Global Language (Part 2 - Questions 7 to 15)",
+      "audioscript": "Part 2.\nSpeaker: Now, English is either the dominant or official language in over 60 countries, and is spoken in every continent. The spread of English around the globe means it is now termed a world language. How did English achieve this extraordinarily wide representation?\nWell, English started to move around the world when British explorers made voyages of discovery to the Americas, Asia, Africa and the Antipodes from the sixteenth century onwards. The expansion of British colonial power, which peaked towards the end of the nineteenth century, and the emergence of the United States as the leading economic power of the twentieth century, are the two factors which give English its present significance.\nIn terms of native speakers, the number of people whose mother tongue is English is significantly greater in the USA than in the UK – nearly four times as many, in fact.\nIn countries where English is a second or official language, it is difficult to determine the precise communicative functions of English, as it coexists with local indigenous languages.\nIt is sometimes suggested that English is inherently superior to other languages. This is simply not true. There are no objective standards of logic or beauty to compare different languages. For example, English may not have many inflectional endings, but its sentence structure is highly complex. Language success is dependent on a variety of socio-economic and political factors, not linguistic ones."
     },
     {
       "id": 16,
@@ -727,7 +787,8 @@
       "tier3_hint": "Chỉ có B 'preparation' phát âm là /e/, ba từ còn lại phát âm là /ɪ/.",
       "tier4_hint": "Quy tắc phát âm tiền tố 'pre-': khi trọng âm rơi vào âm tiết thứ 3, 'pre-' thường phát âm là /e/ như trong preparation. Đáp án B.",
       "solution_steps": "Quy tắc phát âm tiền tố 'pre-': khi trọng âm rơi vào âm tiết thứ 3, 'pre-' thường phát âm là /e/ như trong preparation. Đáp án B.",
-      "mermaid_diagram": "flowchart TD\nA[\"Xét âm tiền tố 'pre-'\"]\nA --> B[\"prescription: /prɪ/\"]\nA --> C[\"preparation: /prep/ (âm /e/)\"]\nA --> D[\"preliminary: /prɪ/\"]\nA --> E[\"presumption: /prɪ/\"]\nC --> F[\"Khác biệt: B (/e/)\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Xét âm tiền tố 'pre-'\"]\nA --> B[\"prescription: /prɪ/\"]\nA --> C[\"preparation: /prep/ (âm /e/)\"]\nA --> D[\"preliminary: /prɪ/\"]\nA --> E[\"presumption: /prɪ/\"]\nC --> F[\"Khác biệt: B (/e/)\"]",
+      "has_audio": false
     },
     {
       "id": 17,
@@ -768,7 +829,8 @@
       "tier3_hint": "Từ 'conserve' có chữ 's' phát âm là /s/, trong khi reserve, preserve, deserve đều phát âm là /z/.",
       "tier4_hint": "Đáp án C. conserve (/s/), các phương án còn lại đều phát âm là /z/.",
       "solution_steps": "Đáp án C. conserve (/s/), các phương án còn lại đều phát âm là /z/.",
-      "mermaid_diagram": "flowchart TD\nA[\"Xét phát âm chữ 's'\"]\nA --> B[\"reserve: /z/\"]\nA --> C[\"preserve: /z/\"]\nA --> D[\"conserve: /s/\"]\nA --> E[\"deserve: /z/\"]\nD --> F[\"Khác biệt: C (/s/)\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Xét phát âm chữ 's'\"]\nA --> B[\"reserve: /z/\"]\nA --> C[\"preserve: /z/\"]\nA --> D[\"conserve: /s/\"]\nA --> E[\"deserve: /z/\"]\nD --> F[\"Khác biệt: C (/s/)\"]",
+      "has_audio": false
     },
     {
       "id": 18,
@@ -809,7 +871,8 @@
       "tier3_hint": "Chỉ có C 'plough' phát âm là /aʊ/ (như cày ruộng), ba từ còn lại đều là âm dài /ɔː/.",
       "tier4_hint": "Đáp án C. plough (/plaʊ/), các từ còn lại mang âm /ɔː/.",
       "solution_steps": "Đáp án C. plough (/plaʊ/), các từ còn lại mang âm /ɔː/.",
-      "mermaid_diagram": "flowchart TD\nA[\"Xét phát âm 'ough' / 'augh'\"]\nA --> B[\"bought: /bɔːt/\"]\nA --> C[\"naught: /nɔːt/\"]\nA --> D[\"plough: /plaʊ/ (âm /aʊ/)\"]\nA --> E[\"thought: /θɔːt/\"]\nD --> F[\"Khác biệt: C (/aʊ/)\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Xét phát âm 'ough' / 'augh'\"]\nA --> B[\"bought: /bɔːt/\"]\nA --> C[\"naught: /nɔːt/\"]\nA --> D[\"plough: /plaʊ/ (âm /aʊ/)\"]\nA --> E[\"thought: /θɔːt/\"]\nD --> F[\"Khác biệt: C (/aʊ/)\"]",
+      "has_audio": false
     },
     {
       "id": 19,
@@ -850,7 +913,8 @@
       "tier3_hint": "Trong khi đó, 'ploughed' là quá khứ đơn của động từ thường kết thúc bằng nguyên âm đôi /aʊ/, đuôi -ed phát âm là /d/.",
       "tier4_hint": "Đáp án A: ploughed (/d/), còn ragged, crooked, wretched đều là tính từ phát âm đuôi là /ɪd/.",
       "solution_steps": "Đáp án A: ploughed (/d/), còn ragged, crooked, wretched đều là tính từ phát âm đuôi là /ɪd/.",
-      "mermaid_diagram": "flowchart TD\nA[\"Quy tắc đuôi '-ed'\"]\nA --> B[\"Tính từ đặc biệt: ragged, crooked, wretched -> /ɪd/\"]\nA --> C[\"Động từ thường: ploughed -> /d/\"]\nC --> D[\"Khác biệt: A (/d/)\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Quy tắc đuôi '-ed'\"]\nA --> B[\"Tính từ đặc biệt: ragged, crooked, wretched -> /ɪd/\"]\nA --> C[\"Động từ thường: ploughed -> /d/\"]\nC --> D[\"Khác biệt: A (/d/)\"]",
+      "has_audio": false
     },
     {
       "id": 20,
@@ -891,7 +955,8 @@
       "tier3_hint": "Ở A, B, C trọng âm rơi vào âm tiết thứ 2 nên 'ad-' bị nhược hóa thành âm /ə/. Ở D 'advertise' trọng âm rơi vào âm tiết 1 nên 'ad-' phát âm rõ là /æ/.",
       "tier4_hint": "Đáp án D. advertise mang âm /æ/, các từ còn lại mang âm schwa /ə/.",
       "solution_steps": "Đáp án D. advertise mang âm /æ/, các từ còn lại mang âm schwa /ə/.",
-      "mermaid_diagram": "flowchart TD\nA[\"Nguyên âm đầu 'ad-'\"]\nA --> B[\"adventure, advantage, addition (trọng âm 2) -> /ə/\"]\nA --> C[\"advertise (trọng âm 1) -> /ˈæd/\"]\nC --> D[\"Khác biệt: D (/æ/)\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Nguyên âm đầu 'ad-'\"]\nA --> B[\"adventure, advantage, addition (trọng âm 2) -> /ə/\"]\nA --> C[\"advertise (trọng âm 1) -> /ˈæd/\"]\nC --> D[\"Khác biệt: D (/æ/)\"]",
+      "has_audio": false
     },
     {
       "id": 21,
@@ -932,7 +997,8 @@
       "tier3_hint": "Chỉ có B 'humourous' có trọng âm 1, ba từ còn lại có trọng âm 2.",
       "tier4_hint": "Đáp án B. humourous (trọng âm rơi vào âm tiết đầu tiên).",
       "solution_steps": "Đáp án B. humourous (trọng âm rơi vào âm tiết đầu tiên).",
-      "mermaid_diagram": "flowchart TD\nA[\"Xét trọng âm\"]\nA --> B[\"disastrous (2)\"]\nA --> C[\"humourous (1) -> KHÁC\"]\nA --> D[\"unanimous (2)\"]\nA --> E[\"ambiguous (2)\"]\nC --> F[\"Đáp án B\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Xét trọng âm\"]\nA --> B[\"disastrous (2)\"]\nA --> C[\"humourous (1) -> KHÁC\"]\nA --> D[\"unanimous (2)\"]\nA --> E[\"ambiguous (2)\"]\nC --> F[\"Đáp án B\"]",
+      "has_audio": false
     },
     {
       "id": 22,
@@ -973,7 +1039,8 @@
       "tier3_hint": "Các từ có hậu tố -eer, -ese, -ade luôn nhận trọng âm chính vào chính nó (âm 3). Riêng từ có hậu tố -ian (physician) nhận trọng âm trước nó (âm 2).",
       "tier4_hint": "Đáp án C. physician (trọng âm 2), các từ còn lại có trọng âm 3.",
       "solution_steps": "Đáp án C. physician (trọng âm 2), các từ còn lại có trọng âm 3.",
-      "mermaid_diagram": "flowchart TD\nA[\"Hậu tố trọng âm\"]\nA --> B[\"-eer, -ese, -ade: puppeteer, Japanese, lemonade (trọng âm 3)\"]\nA --> C[\"-ian: physician (trọng âm 2)\"]\nC --> D[\"Đáp án C\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Hậu tố trọng âm\"]\nA --> B[\"-eer, -ese, -ade: puppeteer, Japanese, lemonade (trọng âm 3)\"]\nA --> C[\"-ian: physician (trọng âm 2)\"]\nC --> D[\"Đáp án C\"]",
+      "has_audio": false
     },
     {
       "id": 23,
@@ -1014,7 +1081,8 @@
       "tier3_hint": "Hậu tố -ial, -ic, -ity kéo trọng âm vào âm tiết đứng ngay trước nó (âm 2). Riêng 'stimulating' xuất phát từ 'stimulate' có trọng âm 1.",
       "tier4_hint": "Đáp án C. stimulating (trọng âm 1), các từ còn lại trọng âm 2.",
       "solution_steps": "Đáp án C. stimulating (trọng âm 1), các từ còn lại trọng âm 2.",
-      "mermaid_diagram": "flowchart TD\nA[\"Trọng âm từ 3-4 âm tiết\"]\nA --> B[\"imperial (2), magnificent (2), simplicity (2)\"]\nA --> C[\"stimulating (1)\"]\nC --> D[\"Đáp án C\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Trọng âm từ 3-4 âm tiết\"]\nA --> B[\"imperial (2), magnificent (2), simplicity (2)\"]\nA --> C[\"stimulating (1)\"]\nC --> D[\"Đáp án C\"]",
+      "has_audio": false
     },
     {
       "id": 24,
@@ -1055,7 +1123,8 @@
       "tier3_hint": "dramatic (-ic), pedestrian (-ian), obedient (-ient) đều có trọng âm rơi vào âm tiết thứ 2. Confident có trọng âm rơi vào âm tiết 1.",
       "tier4_hint": "Đáp án D. confident (trọng âm 1).",
       "solution_steps": "Đáp án D. confident (trọng âm 1).",
-      "mermaid_diagram": "flowchart TD\nA[\"Xét trọng âm\"]\nA --> B[\"dramatic (2), pedestrian (2), obedient (2)\"]\nA --> C[\"confident (1)\"]\nC --> D[\"Đáp án D\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Xét trọng âm\"]\nA --> B[\"dramatic (2), pedestrian (2), obedient (2)\"]\nA --> C[\"confident (1)\"]\nC --> D[\"Đáp án D\"]",
+      "has_audio": false
     },
     {
       "id": 25,
@@ -1096,7 +1165,8 @@
       "tier3_hint": "consequently (1), habitable (1), business (1). Riêng externally bắt nguồn từ external /ɪkˈstɜːnl/ có trọng âm 2.",
       "tier4_hint": "Đáp án D. externally (trọng âm 2), các từ còn lại trọng âm 1.",
       "solution_steps": "Đáp án D. externally (trọng âm 2), các từ còn lại trọng âm 1.",
-      "mermaid_diagram": "flowchart TD\nA[\"Xét trọng âm\"]\nA --> B[\"consequently (1), habitable (1), business (1)\"]\nA --> C[\"externally (2)\"]\nC --> D[\"Đáp án D\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Xét trọng âm\"]\nA --> B[\"consequently (1), habitable (1), business (1)\"]\nA --> C[\"externally (2)\"]\nC --> D[\"Đáp án D\"]",
+      "has_audio": false
     },
     {
       "id": 26,
@@ -1137,7 +1207,8 @@
       "tier3_hint": "Các từ khác không kết hợp với memory: raise/force/arouse memory đều sai ngữ cố định.",
       "tier4_hint": "Đáp án D: jog (jog his memory = giúp anh ấy nhớ lại).",
       "solution_steps": "Đáp án D: jog (jog his memory = giúp anh ấy nhớ lại).",
-      "mermaid_diagram": "flowchart LR\nA[\"Gợi nhớ ký ức\"] --> B[\"Cụm cố định: jog sb's memory\"]\nB --> C[\"Chốt đáp án D\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Gợi nhớ ký ức\"] --> B[\"Cụm cố định: jog sb's memory\"]\nB --> C[\"Chốt đáp án D\"]",
+      "has_audio": false
     },
     {
       "id": 27,
@@ -1178,7 +1249,8 @@
       "tier3_hint": "Các phương án B, C, D đều sai ngữ pháp nghiêm trọng (together with talented with là vô nghĩa).",
       "tier4_hint": "Đáp án A: no less talented than (tài năng không hề thua kém những tên tuổi gạo cội).",
       "solution_steps": "Đáp án A: no less talented than (tài năng không hề thua kém những tên tuổi gạo cội).",
-      "mermaid_diagram": "flowchart TD\nA[\"So sánh tài năng\"] --> B[\"Cấu trúc: no less + adj + than\"]\nB --> C[\"no less talented than: không kém phần tài năng\"]\nC --> D[\"Đáp án A\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"So sánh tài năng\"] --> B[\"Cấu trúc: no less + adj + than\"]\nB --> C[\"no less talented than: không kém phần tài năng\"]\nC --> D[\"Đáp án A\"]",
+      "has_audio": false
     },
     {
       "id": 28,
@@ -1219,7 +1291,8 @@
       "tier3_hint": "Mặc dù ominous (báo điềm gở) nghe có vẻ hợp lý nhưng collocation cố định trong báo cáo chính phủ về biến đổi khí hậu là 'dire warnings'.",
       "tier4_hint": "Đáp án B: dire (dire warnings = những cảnh báo nghiêm trọng/thảm khốc).",
       "solution_steps": "Đáp án B: dire (dire warnings = những cảnh báo nghiêm trọng/thảm khốc).",
-      "mermaid_diagram": "flowchart LR\nA[\"Cảnh báo nghiêm trọng\"] --> B[\"Collocation: dire warnings\"]\nB --> C[\"Đáp án B\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Cảnh báo nghiêm trọng\"] --> B[\"Collocation: dire warnings\"]\nB --> C[\"Đáp án B\"]",
+      "has_audio": false
     },
     {
       "id": 29,
@@ -1260,7 +1333,8 @@
       "tier3_hint": "Linked with thường dùng cho mối liên hệ nhân quả hoặc tổ chức; wired up chỉ đi dây điện; hooked up to the Internet là cụm chuẩn.",
       "tier4_hint": "Đáp án C: hooked up (hooked up to the Internet = được kết nối mạng Internet).",
       "solution_steps": "Đáp án C: hooked up (hooked up to the Internet = được kết nối mạng Internet).",
-      "mermaid_diagram": "flowchart LR\nA[\"Kết nối Internet\"] --> B[\"Phrasal Verb: hook up to the Internet\"]\nB --> C[\"Đáp án C\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Kết nối Internet\"] --> B[\"Phrasal Verb: hook up to the Internet\"]\nB --> C[\"Đáp án C\"]",
+      "has_audio": false
     },
     {
       "id": 30,
@@ -1301,7 +1375,8 @@
       "tier3_hint": "B sai ngữ pháp (with + O + V-ed là sai), C dùng 'to fly' không tự nhiên, A không tạo được ngữ cảnh chỉ lực bắn ra từ vụ nổ.",
       "tier4_hint": "Đáp án D: sending one of its wheels flying (khiến một bánh xe văng ra xa).",
       "solution_steps": "Đáp án D: sending one of its wheels flying (khiến một bánh xe văng ra xa).",
-      "mermaid_diagram": "flowchart TD\nA[\"Hành động: xe tải phát nổ\"] --> B[\"Mệnh đề phân từ chỉ kết quả\"]\nB --> C[\"sending + O + flying\"]\nC --> D[\"Đáp án D\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Hành động: xe tải phát nổ\"] --> B[\"Mệnh đề phân từ chỉ kết quả\"]\nB --> C[\"sending + O + flying\"]\nC --> D[\"Đáp án D\"]",
+      "has_audio": false
     },
     {
       "id": 31,
@@ -1342,7 +1417,8 @@
       "tier3_hint": "Mustn't diễn tả sự cấm đoán, không dùng để suy đoán phủ định. Suy đoán phủ định phải dùng can't / couldn't.",
       "tier4_hint": "Đáp án B: can't (chắc chắn không thể là Annie được).",
       "solution_steps": "Đáp án B: can't (chắc chắn không thể là Annie được).",
-      "mermaid_diagram": "flowchart TD\nA[\"Dấu hiệu: Annie cao hơn người kia\"] --> B[\"Suy đoán chắc chắn phủ định\"]\nB --> C[\"Cấu trúc: can't be + N\"]\nC --> D[\"Đáp án B\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Dấu hiệu: Annie cao hơn người kia\"] --> B[\"Suy đoán chắc chắn phủ định\"]\nB --> C[\"Cấu trúc: can't be + N\"]\nC --> D[\"Đáp án B\"]",
+      "has_audio": false
     },
     {
       "id": 32,
@@ -1383,7 +1459,8 @@
       "tier3_hint": "In case of mang nghĩa 'phòng khi, trong trường hợp khẩn cấp' (e.g. in case of fire). Ở đây nói về ngoại lệ đối với Sam nên phải dùng 'in the case of'.",
       "tier4_hint": "Đáp án C: in the case of (nhưng riêng đối với Sam, tôi sẽ đặc cách).",
       "solution_steps": "Đáp án C: in the case of (nhưng riêng đối với Sam, tôi sẽ đặc cách).",
-      "mermaid_diagram": "flowchart TD\nA[\"Ngoại lệ cho một đối tượng\"] --> B[\"Phân biệt: in case of (phòng khi) vs in the case of (đối với trường hợp của)\"]\nB --> C[\"Chọn: in the case of Sam\"]\nC --> D[\"Đáp án C\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Ngoại lệ cho một đối tượng\"] --> B[\"Phân biệt: in case of (phòng khi) vs in the case of (đối với trường hợp của)\"]\nB --> C[\"Chọn: in the case of Sam\"]\nC --> D[\"Đáp án C\"]",
+      "has_audio": false
     },
     {
       "id": 33,
@@ -1424,7 +1501,8 @@
       "tier3_hint": "Respect thường đi với 'have great respect for'; pay homage to; còn 'hold in high esteem' là cụm thành ngữ cố định.",
       "tier4_hint": "Đáp án B: esteem (được hết sức kính trọng và vị nể).",
       "solution_steps": "Đáp án B: esteem (được hết sức kính trọng và vị nể).",
-      "mermaid_diagram": "flowchart LR\nA[\"Thành ngữ kính trọng\"] --> B[\"hold sb in high esteem\"]\nB --> C[\"Đáp án B\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Thành ngữ kính trọng\"] --> B[\"hold sb in high esteem\"]\nB --> C[\"Đáp án B\"]",
+      "has_audio": false
     },
     {
       "id": 34,
@@ -1465,7 +1543,8 @@
       "tier3_hint": "Kelly muốn đính chính rằng chỗ đó giống quán cà phê hơn là nhà hàng sang trọng.",
       "tier4_hint": "Đáp án D: not so much (it's not so much a restaurant as a café nearby).",
       "solution_steps": "Đáp án D: not so much (it's not so much a restaurant as a café nearby).",
-      "mermaid_diagram": "flowchart LR\nA[\"Đính chính tính chất sự vật\"] --> B[\"Cấu trúc: not so much A as B\"]\nB --> C[\"Đáp án D\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đính chính tính chất sự vật\"] --> B[\"Cấu trúc: not so much A as B\"]\nB --> C[\"Đáp án D\"]",
+      "has_audio": false
     },
     {
       "id": 35,
@@ -1506,7 +1585,8 @@
       "tier3_hint": "Provoke thường mang nghĩa khiêu khích gây tiêu cực; incite là xúi giục bạo lực; spur on là khích lệ tích cực.",
       "tier4_hint": "Đáp án C: spurred (she felt spurred on to even greater efforts).",
       "solution_steps": "Đáp án C: spurred (she felt spurred on to even greater efforts).",
-      "mermaid_diagram": "flowchart LR\nA[\"Khích lệ nỗ lực\"] --> B[\"spur sb on to sth\"]\nB --> C[\"Đáp án C\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Khích lệ nỗ lực\"] --> B[\"spur sb on to sth\"]\nB --> C[\"Đáp án C\"]",
+      "has_audio": false
     },
     {
       "id": 36,
@@ -1547,7 +1627,8 @@
       "tier3_hint": "Các đáp án A, B, C đều dùng dạng 'to-infinitive' sai quy tắc của mệnh đề sau 'that'.",
       "tier4_hint": "Đáp án D: these figures not be publicized (thể giả định thức phủ định bị động).",
       "solution_steps": "Đáp án D: these figures not be publicized (thể giả định thức phủ định bị động).",
-      "mermaid_diagram": "flowchart TD\nA[\"Cấu trúc: It is vital that + S + V(subjunctive)\"]\nA --> B[\"Bị động phủ định: S + not be + V-ed\"]\nB --> C[\"these figures not be publicized\"]\nC --> D[\"Đáp án D\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Cấu trúc: It is vital that + S + V(subjunctive)\"]\nA --> B[\"Bị động phủ định: S + not be + V-ed\"]\nB --> C[\"these figures not be publicized\"]\nC --> D[\"Đáp án D\"]",
+      "has_audio": false
     },
     {
       "id": 37,
@@ -1588,7 +1669,8 @@
       "tier3_hint": "'Important aspect' là danh từ đếm được số ít bắt đầu bằng nguyên âm nên dùng 'an'.",
       "tier4_hint": "Đáp án A: No article - an (Non-verbal language is an important aspect...).",
       "solution_steps": "Đáp án A: No article - an (Non-verbal language is an important aspect...).",
-      "mermaid_diagram": "flowchart TD\nA[\"Quy tắc mạo từ\"] --> B[\"non-verbal language: danh từ khái quát -> No article\"]\nA --> C[\"important aspect: danh từ đếm được số ít, âm nguyên âm -> an\"]\nB & C --> D[\"Đáp án A\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Quy tắc mạo từ\"] --> B[\"non-verbal language: danh từ khái quát -> No article\"]\nA --> C[\"important aspect: danh từ đếm được số ít, âm nguyên âm -> an\"]\nB & C --> D[\"Đáp án A\"]",
+      "has_audio": false
     },
     {
       "id": 38,
@@ -1629,7 +1711,8 @@
       "tier3_hint": "Blossoming và flowering thường dùng cho hoa hoặc nghĩa bóng của mối quan hệ, không tạo thành danh từ ghép chuẩn với entrepreneur như 'budding'.",
       "tier4_hint": "Đáp án B: budding (doanh nhân mới chớm lập nghiệp).",
       "solution_steps": "Đáp án B: budding (doanh nhân mới chớm lập nghiệp).",
-      "mermaid_diagram": "flowchart LR\nA[\"Doanh nhân mới vào nghề\"] --> B[\"Collocation: budding entrepreneur\"]\nB --> C[\"Đáp án B\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Doanh nhân mới vào nghề\"] --> B[\"Collocation: budding entrepreneur\"]\nB --> C[\"Đáp án B\"]",
+      "has_audio": false
     },
     {
       "id": 39,
@@ -1670,7 +1753,8 @@
       "tier3_hint": "Nhìn vào phương án A: 'If I had known' và B: 'Had I known'. Cả 2 đều đúng ngữ pháp, nhưng trong đề thi Chuyên Anh / HSG, đảo ngữ luôn là cấu trúc được ưu tiên đánh giá cao nhất, và đáp án chính thức chỉ định B.",
       "tier4_hint": "Đáp án B: Had I known (Đảo ngữ điều kiện loại 3).",
       "solution_steps": "Đáp án B: Had I known (Đảo ngữ điều kiện loại 3).",
-      "mermaid_diagram": "flowchart TD\nA[\"Câu điều kiện loại 3\"] --> B[\"Vế chính: would have enrolled\"]\nB --> C[\"Đảo ngữ: Had + S + V3/ed\"]\nC --> D[\"Had I known\"] --> E[\"Đáp án B\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Câu điều kiện loại 3\"] --> B[\"Vế chính: would have enrolled\"]\nB --> C[\"Đảo ngữ: Had + S + V3/ed\"]\nC --> D[\"Had I known\"] --> E[\"Đáp án B\"]",
+      "has_audio": false
     },
     {
       "id": 40,
@@ -1711,7 +1795,8 @@
       "tier3_hint": "Hành động 'tìm thấy tiền' đã xảy ra trước thời điểm 'được báo cáo' nên dùng hoàn thành: 'to have found'.",
       "tier4_hint": "Đáp án C: to have (The old woman is reported to have found...).",
       "solution_steps": "Đáp án C: to have (The old woman is reported to have found...).",
-      "mermaid_diagram": "flowchart LR\nA[\"Bị động khách quan\"] --> B[\"is reported + to have + V-p2\"]\nB --> C[\"Đáp án C: to have\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Bị động khách quan\"] --> B[\"is reported + to have + V-p2\"]\nB --> C[\"Đáp án C: to have\"]",
+      "has_audio": false
     },
     {
       "id": 41,
@@ -1752,7 +1837,8 @@
       "tier3_hint": "Từ đồng nghĩa trực tiếp: refused to change her decision.",
       "tier4_hint": "Đáp án D: refused to change her decision (giữ vững lập trường, kiên quyết không đổi ý).",
       "solution_steps": "Đáp án D: refused to change her decision (giữ vững lập trường, kiên quyết không đổi ý).",
-      "mermaid_diagram": "flowchart LR\nA[\"stand one's ground\"] --> B[\"refusing to back down\"]\nB --> C[\"refused to change her decision\"]\nC --> D[\"Đáp án D\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"stand one's ground\"] --> B[\"refusing to back down\"]\nB --> C[\"refused to change her decision\"]\nC --> D[\"Đáp án D\"]",
+      "has_audio": false
     },
     {
       "id": 42,
@@ -1793,7 +1879,8 @@
       "tier3_hint": "Loại trừ: reading (đọc), retrospection (hồi tưởng), subjection (phục tùng).",
       "tier4_hint": "Đáp án B: In my opinion.",
       "solution_steps": "Đáp án B: In my opinion.",
-      "mermaid_diagram": "flowchart LR\nA[\"in my book\"] --> B[\"in my opinion / from my point of view\"]\nB --> C[\"Đáp án B\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"in my book\"] --> B[\"in my opinion / from my point of view\"]\nB --> C[\"Đáp án B\"]",
+      "has_audio": false
     },
     {
       "id": 43,
@@ -1834,7 +1921,8 @@
       "tier3_hint": "Trái nghĩa với tức tốc, nhanh chóng là chần chừ, do dự, lưỡng lự (hesitantly).",
       "tier4_hint": "Đáp án C: hesitantly (trái nghĩa với on the double).",
       "solution_steps": "Đáp án C: hesitantly (trái nghĩa với on the double).",
-      "mermaid_diagram": "flowchart TD\nA[\"on the double: tức tốc, ngay lập tức\"] --> B[\"Tìm từ TRÁI NGHĨA\"]\nB --> C[\"hesitantly: chần chừ, do dự\"]\nC --> D[\"Đáp án C\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"on the double: tức tốc, ngay lập tức\"] --> B[\"Tìm từ TRÁI NGHĨA\"]\nB --> C[\"hesitantly: chần chừ, do dự\"]\nC --> D[\"Đáp án C\"]",
+      "has_audio": false
     },
     {
       "id": 44,
@@ -1875,7 +1963,8 @@
       "tier3_hint": "Unproductive và unfruitful là từ đồng nghĩa. Từ TRÁI NGHĨA phải là có kết quả tốt, hiệu quả (effective).",
       "tier4_hint": "Đáp án D: effective (hiệu quả).",
       "solution_steps": "Đáp án D: effective (hiệu quả).",
-      "mermaid_diagram": "flowchart TD\nA[\"counter-productive: phản tác dụng\"] --> B[\"Tìm từ TRÁI NGHĨA\"]\nB --> C[\"effective: mang lại hiệu quả cao\"]\nC --> D[\"Đáp án D\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"counter-productive: phản tác dụng\"] --> B[\"Tìm từ TRÁI NGHĨA\"]\nB --> C[\"effective: mang lại hiệu quả cao\"]\nC --> D[\"Đáp án D\"]",
+      "has_audio": false
     },
     {
       "id": 45,
@@ -1903,7 +1992,8 @@
       "tier3_hint": "Cụm từ cố định: 'irrespective of' = regardless of (bất luận, không phân biệt).",
       "tier4_hint": "Đáp án: irrespective.",
       "solution_steps": "Đáp án: irrespective.",
-      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'irrespective'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'irrespective'\"]",
+      "has_audio": false
     },
     {
       "id": 46,
@@ -1931,7 +2021,8 @@
       "tier3_hint": "Đáp án: layering (the layering technique = kỹ thuật mặc đồ nhiều lớp giữ ấm).",
       "tier4_hint": "Đáp án: layering.",
       "solution_steps": "Đáp án: layering.",
-      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'layering'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'layering'\"]",
+      "has_audio": false
     },
     {
       "id": 47,
@@ -1959,7 +2050,8 @@
       "tier3_hint": "Đáp án: impermeable fabric (chất liệu vải không thấm nước/không thấm khí).",
       "tier4_hint": "Đáp án: impermeable.",
       "solution_steps": "Đáp án: impermeable.",
-      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'impermeable'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'impermeable'\"]",
+      "has_audio": false
     },
     {
       "id": 48,
@@ -1987,7 +2079,8 @@
       "tier3_hint": "Hậu tố tạo danh từ: -ure -> moisture.",
       "tier4_hint": "Đáp án: moisture.",
       "solution_steps": "Đáp án: moisture.",
-      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'moisture'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'moisture'\"]",
+      "has_audio": false
     },
     {
       "id": 49,
@@ -2016,7 +2109,8 @@
       "tier3_hint": "Từ loại: tính từ của SUIT là suitable / unsuitable.",
       "tier4_hint": "Đáp án: suitable (hoặc unsuitable).",
       "solution_steps": "Đáp án: suitable (hoặc unsuitable).",
-      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'suitable'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'suitable'\"]",
+      "has_audio": false
     },
     {
       "id": 50,
@@ -2044,7 +2138,8 @@
       "tier3_hint": "Đáp án: specifically (được thiết kế dành riêng cho đi bộ leo núi).",
       "tier4_hint": "Đáp án: specifically.",
       "solution_steps": "Đáp án: specifically.",
-      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'specifically'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'specifically'\"]",
+      "has_audio": false
     },
     {
       "id": 51,
@@ -2072,7 +2167,8 @@
       "tier3_hint": "Đáp án: slippery (bề mặt trơn trượt).",
       "tier4_hint": "Đáp án: slippery.",
       "solution_steps": "Đáp án: slippery.",
-      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'slippery'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'slippery'\"]",
+      "has_audio": false
     },
     {
       "id": 52,
@@ -2100,7 +2196,8 @@
       "tier3_hint": "Đáp án: lightened (đã được làm nhẹ đi đáng kể).",
       "tier4_hint": "Đáp án: lightened.",
       "solution_steps": "Đáp án: lightened.",
-      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'lightened'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Từ gốc trong ngoặc\"] --> B[\"Xác định từ loại & ngữ nghĩa\"]\nB --> C[\"Thêm tiền tố / hậu tố chuẩn\"]\nC --> D[\"Đáp án: 'lightened'\"]",
+      "has_audio": false
     },
     {
       "id": 53,
@@ -2128,7 +2225,8 @@
       "tier3_hint": "Động từ ở dạng nguyên mẫu sau trợ động từ phủ định 'Don't'.",
       "tier4_hint": "Đáp án: wolf down (ăn ngấu nghiến).",
       "solution_steps": "Đáp án: wolf down (ăn ngấu nghiến).",
-      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'wolf down'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'wolf down'\"]",
+      "has_audio": false
     },
     {
       "id": 54,
@@ -2156,7 +2254,8 @@
       "tier3_hint": "Lưu ý chia động từ: thêm 's' -> 'backs onto'.",
       "tier4_hint": "Đáp án: backs onto.",
       "solution_steps": "Đáp án: backs onto.",
-      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'backs onto'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'backs onto'\"]",
+      "has_audio": false
     },
     {
       "id": 55,
@@ -2184,7 +2283,8 @@
       "tier3_hint": "Cần động từ nguyên mẫu sau 'There is no need to...'.",
       "tier4_hint": "Đáp án: paper over (paper over the cracks).",
       "solution_steps": "Đáp án: paper over (paper over the cracks).",
-      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'paper over'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'paper over'\"]",
+      "has_audio": false
     },
     {
       "id": 56,
@@ -2212,7 +2312,8 @@
       "tier3_hint": "Nguyên mẫu sau 'to'.",
       "tier4_hint": "Đáp án: gloat over.",
       "solution_steps": "Đáp án: gloat over.",
-      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'gloat over'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'gloat over'\"]",
+      "has_audio": false
     },
     {
       "id": 57,
@@ -2241,7 +2342,8 @@
       "tier3_hint": "Chia ở hiện tại đơn (ngôi 3 số ít) hoặc quá khứ: waters down / watered down.",
       "tier4_hint": "Đáp án: waters down.",
       "solution_steps": "Đáp án: waters down.",
-      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'waters down'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'waters down'\"]",
+      "has_audio": false
     },
     {
       "id": 58,
@@ -2271,7 +2373,8 @@
       "tier3_hint": "Ngữ cảnh hành động kéo dài tới nửa đêm: quá khứ tiếp diễn 'was beavering away' hoặc quá khứ đơn 'beavered away'.",
       "tier4_hint": "Đáp án: was beavering away.",
       "solution_steps": "Đáp án: was beavering away.",
-      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'was beavering away'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'was beavering away'\"]",
+      "has_audio": false
     },
     {
       "id": 59,
@@ -2299,7 +2402,8 @@
       "tier3_hint": "Sau 'managed to' dùng động từ nguyên mẫu.",
       "tier4_hint": "Đáp án: ferret out.",
       "solution_steps": "Đáp án: ferret out.",
-      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'ferret out'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'ferret out'\"]",
+      "has_audio": false
     },
     {
       "id": 60,
@@ -2329,7 +2433,8 @@
       "tier3_hint": "Cấu trúc thì hiện tại tiếp diễn diễn tả thói quen gây khó chịu: be + always + V-ing -> is always rabbiting on.",
       "tier4_hint": "Đáp án: is always rabbiting on.",
       "solution_steps": "Đáp án: is always rabbiting on.",
-      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'is always rabbiting on'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Động từ cột A + Giới từ cột B\"] --> B[\"Ghép nghĩa phù hợp ngữ cảnh\"]\nB --> C[\"Chia đúng thì ngữ pháp\"]\nC --> D[\"Đáp án: 'is always rabbiting on'\"]",
+      "has_audio": false
     },
     {
       "id": 61,
@@ -2357,7 +2462,8 @@
       "tier3_hint": "Từ thỏa mãn cả 3 câu: SENSE.",
       "tier4_hint": "Đáp án: sense.",
       "solution_steps": "Đáp án: sense.",
-      "mermaid_diagram": "flowchart TD\nA[\"Phân tích 3 ngữ cảnh a, b, c\"] --> B[\"Tìm từ đa nghĩa đồng nhất\"]\nB --> C[\"Chốt từ: 'sense'\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Phân tích 3 ngữ cảnh a, b, c\"] --> B[\"Tìm từ đa nghĩa đồng nhất\"]\nB --> C[\"Chốt từ: 'sense'\"]",
+      "has_audio": false
     },
     {
       "id": 62,
@@ -2385,7 +2491,8 @@
       "tier3_hint": "Từ thỏa mãn cả 3 câu: PROCESS.",
       "tier4_hint": "Đáp án: process.",
       "solution_steps": "Đáp án: process.",
-      "mermaid_diagram": "flowchart TD\nA[\"Phân tích 3 ngữ cảnh a, b, c\"] --> B[\"Tìm từ đa nghĩa đồng nhất\"]\nB --> C[\"Chốt từ: 'process'\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Phân tích 3 ngữ cảnh a, b, c\"] --> B[\"Tìm từ đa nghĩa đồng nhất\"]\nB --> C[\"Chốt từ: 'process'\"]",
+      "has_audio": false
     },
     {
       "id": 63,
@@ -2414,7 +2521,8 @@
       "tier3_hint": "Từ thỏa mãn cả 3 câu: GROUNDS (dạng số nhiều).",
       "tier4_hint": "Đáp án: grounds.",
       "solution_steps": "Đáp án: grounds.",
-      "mermaid_diagram": "flowchart TD\nA[\"Phân tích 3 ngữ cảnh a, b, c\"] --> B[\"Tìm từ đa nghĩa đồng nhất\"]\nB --> C[\"Chốt từ: 'grounds'\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Phân tích 3 ngữ cảnh a, b, c\"] --> B[\"Tìm từ đa nghĩa đồng nhất\"]\nB --> C[\"Chốt từ: 'grounds'\"]",
+      "has_audio": false
     },
     {
       "id": 64,
@@ -2442,7 +2550,8 @@
       "tier3_hint": "Từ thỏa mãn cả 3 câu: FED.",
       "tier4_hint": "Đáp án: fed.",
       "solution_steps": "Đáp án: fed.",
-      "mermaid_diagram": "flowchart TD\nA[\"Phân tích 3 ngữ cảnh a, b, c\"] --> B[\"Tìm từ đa nghĩa đồng nhất\"]\nB --> C[\"Chốt từ: 'fed'\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Phân tích 3 ngữ cảnh a, b, c\"] --> B[\"Tìm từ đa nghĩa đồng nhất\"]\nB --> C[\"Chốt từ: 'fed'\"]",
+      "has_audio": false
     },
     {
       "id": 65,
@@ -2471,7 +2580,8 @@
       "tier3_hint": "Từ thỏa mãn cả 3 câu: FIGURES.",
       "tier4_hint": "Đáp án: figures.",
       "solution_steps": "Đáp án: figures.",
-      "mermaid_diagram": "flowchart TD\nA[\"Phân tích 3 ngữ cảnh a, b, c\"] --> B[\"Tìm từ đa nghĩa đồng nhất\"]\nB --> C[\"Chốt từ: 'figures'\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Phân tích 3 ngữ cảnh a, b, c\"] --> B[\"Tìm từ đa nghĩa đồng nhất\"]\nB --> C[\"Chốt từ: 'figures'\"]",
+      "has_audio": false
     },
     {
       "id": 66,
@@ -2512,7 +2622,8 @@
       "tier3_hint": "Loại trừ: desperately (tuyệt vọng), determinedly (quyết tâm), decidedly (dứt khoát).",
       "tier4_hint": "Đáp án C: deliberately.",
       "solution_steps": "Đáp án C: deliberately.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: C\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: C\"]",
+      "has_audio": false
     },
     {
       "id": 67,
@@ -2553,7 +2664,8 @@
       "tier3_hint": "Put off là trì hoãn; put down là ghi lại hoặc hạ bệ; put by là tiết kiệm; put forward là đề xuất ý tưởng.",
       "tier4_hint": "Đáp án D: put forward.",
       "solution_steps": "Đáp án D: put forward.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: D\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: D\"]",
+      "has_audio": false
     },
     {
       "id": 68,
@@ -2594,7 +2706,8 @@
       "tier3_hint": "Loại trừ: facial aspects (khía cạnh khuôn mặt), facial looks (vẻ ngoài).",
       "tier4_hint": "Đáp án C: expressions.",
       "solution_steps": "Đáp án C: expressions.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: C\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: C\"]",
+      "has_audio": false
     },
     {
       "id": 69,
@@ -2635,7 +2748,8 @@
       "tier3_hint": "Loại trừ các từ mang nghĩa tiêu cực (sadness, depression) hoặc không đếm được/không hợp ngữ cảnh (humour).",
       "tier4_hint": "Đáp án A: laughter.",
       "solution_steps": "Đáp án A: laughter.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: A\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: A\"]",
+      "has_audio": false
     },
     {
       "id": 70,
@@ -2676,7 +2790,8 @@
       "tier3_hint": "Loại trừ: cut, remove, eliminate không đi với cấu trúc '... the brain of fuel'.",
       "tier4_hint": "Đáp án B: starving (starving the brain of essential fuel).",
       "solution_steps": "Đáp án B: starving (starving the brain of essential fuel).",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: B\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: B\"]",
+      "has_audio": false
     },
     {
       "id": 71,
@@ -2717,7 +2832,8 @@
       "tier3_hint": "Loại trừ: 'make' đi với V-bare (make your brain release); 'decide' không dùng với ngoại động từ tân ngữ + to-V theo nghĩa này.",
       "tier4_hint": "Đáp án B: persuade.",
       "solution_steps": "Đáp án B: persuade.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: B\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: B\"]",
+      "has_audio": false
     },
     {
       "id": 72,
@@ -2758,7 +2874,8 @@
       "tier3_hint": "Loại trừ: through, by, after không đi với cấu trúc thay thế của 'replace'.",
       "tier4_hint": "Đáp án D: with.",
       "solution_steps": "Đáp án D: with.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: D\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: D\"]",
+      "has_audio": false
     },
     {
       "id": 73,
@@ -2799,7 +2916,8 @@
       "tier3_hint": "Loại trừ: psychosomatic disease/infection là các kết hợp không tự nhiên trong thuật ngữ tâm lý y khoa.",
       "tier4_hint": "Đáp án B: illness.",
       "solution_steps": "Đáp án B: illness.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: B\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: B\"]",
+      "has_audio": false
     },
     {
       "id": 74,
@@ -2840,7 +2958,8 @@
       "tier3_hint": "Loại trừ: recover from mang nghĩa bình phục sau cơn ốm nặng; benefit from mang nghĩa hưởng lợi ích từ một bài tập/thói quen.",
       "tier4_hint": "Đáp án C: benefit.",
       "solution_steps": "Đáp án C: benefit.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: C\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: C\"]",
+      "has_audio": false
     },
     {
       "id": 75,
@@ -2881,7 +3000,8 @@
       "tier3_hint": "Loại trừ: dây thần kinh (nerves), tĩnh mạch (veins), xương (bones) không thể chủ động kéo khóe miệng tạo nụ cười.",
       "tier4_hint": "Đáp án A: muscles.",
       "solution_steps": "Đáp án A: muscles.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: A\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc mạch văn ngữ cảnh\"] --> B[\"Xét cấu trúc ngữ pháp & Collocation\"]\nB --> C[\"Chốt đáp án: A\"]",
+      "has_audio": false
     },
     {
       "id": 76,
@@ -2934,7 +3054,8 @@
       "tier3_hint": "Đoạn D liên kết hoàn hảo giữa kẹo cao su hiện đại và nguồn gốc cổ xưa của người Hy Lạp và người Maya.",
       "tier4_hint": "Đáp án: D.",
       "solution_steps": "Đáp án: D.",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn D\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn D\"]",
+      "has_audio": false
     },
     {
       "id": 77,
@@ -2987,7 +3108,8 @@
       "tier3_hint": "Đoạn A giải thích lý do ngành kẹo cao su bùng nổ nhờ nhựa cây sapodilla, mở đường cho câu sau nói về sự thất bại khi cố gắng trồng trọt quy mô công nghiệp.",
       "tier4_hint": "Đáp án: A.",
       "solution_steps": "Đáp án: A.",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn A\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn A\"]",
+      "has_audio": false
     },
     {
       "id": 78,
@@ -3040,7 +3162,8 @@
       "tier3_hint": "Đoạn G kết nối trực tiếp với các loài côn trùng độc hại ở câu tiếp theo.",
       "tier4_hint": "Đáp án: G.",
       "solution_steps": "Đáp án: G.",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn G\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn G\"]",
+      "has_audio": false
     },
     {
       "id": 79,
@@ -3093,7 +3216,8 @@
       "tier3_hint": "Đoạn E bổ sung chi tiết về quy trình lao động cực nhọc (punishing working environment).",
       "tier4_hint": "Đáp án: E.",
       "solution_steps": "Đáp án: E.",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn E\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn E\"]",
+      "has_audio": false
     },
     {
       "id": 80,
@@ -3146,7 +3270,8 @@
       "tier3_hint": "Đoạn B giới thiệu luận điểm về lợi ích nha khoa ('dental benefits'), câu sau giải thích cơ chế sinh học.",
       "tier4_hint": "Đáp án: B.",
       "solution_steps": "Đáp án: B.",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn B\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn B\"]",
+      "has_audio": false
     },
     {
       "id": 81,
@@ -3199,7 +3324,8 @@
       "tier3_hint": "Đoạn C hoàn thiện mạch phát triển hiện đại của công nghiệp sản xuất kẹo cao su.",
       "tier4_hint": "Đáp án: C.",
       "solution_steps": "Đáp án: C.",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn C\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc câu trước & câu sau chỗ trống\"] --> B[\"Tìm từ nối & chỉ từ liên kết\"]\nB --> C[\"Khớp mạch ý: Chọn đoạn C\"]",
+      "has_audio": false
     },
     {
       "id": 82,
@@ -3236,7 +3362,8 @@
       "tier3_hint": "'a large part of our daily life' = 'much of our time'. Thông tin hoàn toàn trùng khớp.",
       "tier4_hint": "Đáp án: YES (A).",
       "solution_steps": "Đáp án: YES (A).",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: YES\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: YES\"]",
+      "has_audio": false
     },
     {
       "id": 83,
@@ -3273,7 +3400,8 @@
       "tier3_hint": "'the ease with which people process information' = 'how readily they can understand it'.",
       "tier4_hint": "Đáp án: YES (A).",
       "solution_steps": "Đáp án: YES (A).",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: YES\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: YES\"]",
+      "has_audio": false
     },
     {
       "id": 84,
@@ -3310,7 +3438,8 @@
       "tier3_hint": "Bài đọc khẳng định trả lời ngay tức thì (instantly) được coi là am hiểu hơn (more knowledgeable), trái ngược hoàn toàn với 'show a lack of knowledge'.",
       "tier4_hint": "Đáp án: NO (B).",
       "solution_steps": "Đáp án: NO (B).",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: NO\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: NO\"]",
+      "has_audio": false
     },
     {
       "id": 85,
@@ -3347,7 +3476,8 @@
       "tier3_hint": "Bài đọc chỉ nêu một nghiên cứu cụ thể đã sử dụng video, nhưng KHÔNG hề khẳng định phương pháp này 'thường xuyên được sử dụng' (have often been used).",
       "tier4_hint": "Đáp án: NOT GIVEN (C).",
       "solution_steps": "Đáp án: NOT GIVEN (C).",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: NOT GIVEN\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: NOT GIVEN\"]",
+      "has_audio": false
     },
     {
       "id": 86,
@@ -3384,7 +3514,8 @@
       "tier3_hint": "Bài viết không hề so sánh mức độ rõ ràng của ý tưởng (clearer ideas) giữa hai nhóm người này.",
       "tier4_hint": "Đáp án: NOT GIVEN (C).",
       "solution_steps": "Đáp án: NOT GIVEN (C).",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: NOT GIVEN\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: NOT GIVEN\"]",
+      "has_audio": false
     },
     {
       "id": 87,
@@ -3421,7 +3552,8 @@
       "tier3_hint": "Cụm 'In a similar sense' khẳng định sự chậm trễ trong hội thoại online CŨNG gây ra hệ quả tiêu cực tương tự (lo âu, hiểu nhầm), đối lập với câu nhận định 'fail to have the same negative effect'.",
       "tier4_hint": "Đáp án: NO (B).",
       "solution_steps": "Đáp án: NO (B).",
-      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: NO\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Đọc nhận định trong câu hỏi\"] --> B[\"Định vị câu tương ứng trong bài đọc\"]\nB --> C[\"So sánh ngữ nghĩa & sắc thái\"]\nC --> D[\"Kết luận: NO\"]",
+      "has_audio": false
     },
     {
       "id": 88,
@@ -3453,7 +3585,8 @@
       "tier3_hint": "Từ cần điền: behavior / activities (hoặc their behaviour).",
       "tier4_hint": "Đáp án: (their) behaviour / activities.",
       "solution_steps": "Đáp án: (their) behaviour / activities.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'behaviour'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'behaviour'\"]",
+      "has_audio": false
     },
     {
       "id": 89,
@@ -3482,7 +3615,8 @@
       "tier3_hint": "Đồng nghĩa: enable = facilitate -> danh từ cần điền là: turn-taking.",
       "tier4_hint": "Đáp án: turn-taking.",
       "solution_steps": "Đáp án: turn-taking.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'turn-taking'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'turn-taking'\"]",
+      "has_audio": false
     },
     {
       "id": 90,
@@ -3511,7 +3645,8 @@
       "tier3_hint": "Từ cần điền đi cùng silences: interruptions (những sự ngắt lời).",
       "tier4_hint": "Đáp án: interruptions.",
       "solution_steps": "Đáp án: interruptions.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'interruptions'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'interruptions'\"]",
+      "has_audio": false
     },
     {
       "id": 91,
@@ -3540,7 +3675,8 @@
       "tier3_hint": "Sau 'desire to' cần động từ nguyên mẫu: belong (nhu cầu thuộc về một tập thể).",
       "tier4_hint": "Đáp án: belong.",
       "solution_steps": "Đáp án: belong.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'belong'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'belong'\"]",
+      "has_audio": false
     },
     {
       "id": 92,
@@ -3569,7 +3705,8 @@
       "tier3_hint": "Cụm danh từ: distress levels (mức độ căng thẳng/bất an).",
       "tier4_hint": "Đáp án: distress levels.",
       "solution_steps": "Đáp án: distress levels.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'distress levels'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'distress levels'\"]",
+      "has_audio": false
     },
     {
       "id": 93,
@@ -3598,7 +3735,8 @@
       "tier3_hint": "Danh từ chỉ cảm giác bị từ chối/hắt hủi: rejection.",
       "tier4_hint": "Đáp án: rejection.",
       "solution_steps": "Đáp án: rejection.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'rejection'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'rejection'\"]",
+      "has_audio": false
     },
     {
       "id": 94,
@@ -3626,7 +3764,8 @@
       "tier3_hint": "Danh từ chỉ mức độ đồng thuận: agreement.",
       "tier4_hint": "Đáp án: agreement.",
       "solution_steps": "Đáp án: agreement.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'agreement'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'agreement'\"]",
+      "has_audio": false
     },
     {
       "id": 95,
@@ -3655,7 +3794,8 @@
       "tier3_hint": "Danh từ: content (nội dung cuộc trò chuyện).",
       "tier4_hint": "Đáp án: content.",
       "solution_steps": "Đáp án: content.",
-      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'content'\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"Đọc đoạn tóm tắt & gạch từ khóa\"] --> B[\"Quét bài đọc đoạn tương ứng\"]\nB --> C[\"Chọn chuẩn từ gốc (<= 2 từ): 'content'\"]",
+      "has_audio": false
     },
     {
       "id": 96,
@@ -3686,7 +3826,8 @@
       "tier3_hint": "Không dùng 'let' hay động từ chủ động. Chuyển sang thể nhờ bảo/bị động với 'have'.",
       "tier4_hint": "Đáp án: photograph of my children used in an advertisement.",
       "solution_steps": "Đáp án: photograph of my children used in an advertisement.",
-      "mermaid_diagram": "flowchart LR\nA[\"I'd never let anyone use X\"] --> B[\"Causative Passive: have X done\"]\nB --> C[\"photograph of my children used in an advertisement.\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"I'd never let anyone use X\"] --> B[\"Causative Passive: have X done\"]\nB --> C[\"photograph of my children used in an advertisement.\"]",
+      "has_audio": false
     },
     {
       "id": 97,
@@ -3720,7 +3861,8 @@
       "tier3_hint": "The union is likely to take industrial action (Công đoàn rất có khả năng sẽ tiến hành đình công).",
       "tier4_hint": "Đáp án: is/are (very) likely to / almost certain to / will probably take industrial action.",
       "solution_steps": "Đáp án: is/are (very) likely to / almost certain to / will probably take industrial action.",
-      "mermaid_diagram": "flowchart LR\nA[\"There's every chance of X being done\"] --> B[\"S + is likely to do X\"]\nB --> C[\"is likely to take industrial action.\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"There's every chance of X being done\"] --> B[\"S + is likely to do X\"]\nB --> C[\"is likely to take industrial action.\"]",
+      "has_audio": false
     },
     {
       "id": 98,
@@ -3749,7 +3891,8 @@
       "tier3_hint": "Lưu ý: Không đảo ngữ ở vế ngay sau Not until, mà đảo ngữ ở vế chính!",
       "tier4_hint": "Đáp án: two weeks had passed did the letter arrive.",
       "solution_steps": "Đáp án: two weeks had passed did the letter arrive.",
-      "mermaid_diagram": "flowchart TD\nA[\"Two weeks passed before X happened\"] --> B[\"Đảo ngữ: Not until + time clause + did + S + V\"]\nB --> C[\"Not until two weeks had passed did the letter arrive.\"]"
+      "mermaid_diagram": "flowchart TD\nA[\"Two weeks passed before X happened\"] --> B[\"Đảo ngữ: Not until + time clause + did + S + V\"]\nB --> C[\"Not until two weeks had passed did the letter arrive.\"]",
+      "has_audio": false
     },
     {
       "id": 99,
@@ -3778,7 +3921,8 @@
       "tier3_hint": "George is widely assumed to have been wrongly accused.",
       "tier4_hint": "Đáp án: is widely assumed to have been wrongly accused.",
       "solution_steps": "Đáp án: is widely assumed to have been wrongly accused.",
-      "mermaid_diagram": "flowchart LR\nA[\"It is widespread assumption that S was V-ed\"] --> B[\"S + is widely assumed + to have been V-ed\"]\nB --> C[\"George is widely assumed to have been wrongly accused.\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"It is widespread assumption that S was V-ed\"] --> B[\"S + is widely assumed + to have been V-ed\"]\nB --> C[\"George is widely assumed to have been wrongly accused.\"]",
+      "has_audio": false
     },
     {
       "id": 100,
@@ -3807,7 +3951,8 @@
       "tier3_hint": "Cụm 'when they leave' được giữ nguyên ở mệnh đề phụ chỉ thời gian.",
       "tier4_hint": "Đáp án: are presented with a certificate of attendance when they leave.",
       "solution_steps": "Đáp án: are presented with a certificate of attendance when they leave.",
-      "mermaid_diagram": "flowchart LR\nA[\"present X to Y\"] --> B[\"Bị động: Y is presented with X\"]\nB --> C[\"are presented with a certificate of attendance when they leave.\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"present X to Y\"] --> B[\"Bị động: Y is presented with X\"]\nB --> C[\"are presented with a certificate of attendance when they leave.\"]",
+      "has_audio": false
     },
     {
       "id": 101,
@@ -3837,7 +3982,8 @@
       "tier3_hint": "Điền: resigned herself to the low.",
       "tier4_hint": "Đáp án: resigned herself to the low (sales of her novel).",
       "solution_steps": "Đáp án: resigned herself to the low (sales of her novel).",
-      "mermaid_diagram": "flowchart LR\nA[\"accept the fact that...\"] --> B[\"Idiom: resign oneself to sth\"]\nB --> C[\"resigned herself to the low\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"accept the fact that...\"] --> B[\"Idiom: resign oneself to sth\"]\nB --> C[\"resigned herself to the low\"]",
+      "has_audio": false
     },
     {
       "id": 102,
@@ -3866,7 +4012,8 @@
       "tier3_hint": "Điền: lest the weather should (hoặc lest the weather).",
       "tier4_hint": "Đáp án: lest the weather should.",
       "solution_steps": "Đáp án: lest the weather should.",
-      "mermaid_diagram": "flowchart LR\nA[\"as we're afraid that...\"] --> B[\"Cấu trúc: lest + S + (should) + V-bare\"]\nB --> C[\"lest the weather should\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"as we're afraid that...\"] --> B[\"Cấu trúc: lest + S + (should) + V-bare\"]\nB --> C[\"lest the weather should\"]",
+      "has_audio": false
     },
     {
       "id": 103,
@@ -3896,7 +4043,8 @@
       "tier3_hint": "Điền: this one brought a lump to my.",
       "tier4_hint": "Đáp án: this one brought a lump to my (throat).",
       "solution_steps": "Đáp án: this one brought a lump to my (throat).",
-      "mermaid_diagram": "flowchart LR\nA[\"almost moved me to tears\"] --> B[\"Idiom: bring a lump to one's throat\"]\nB --> C[\"this one brought a lump to my\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"almost moved me to tears\"] --> B[\"Idiom: bring a lump to one's throat\"]\nB --> C[\"this one brought a lump to my\"]",
+      "has_audio": false
     },
     {
       "id": 104,
@@ -3928,7 +4076,8 @@
       "tier3_hint": "Điền: only she didn't have qualms about / only she had no qualms about.",
       "tier4_hint": "Đáp án: only she didn't have / were not having (any) qualms about.",
       "solution_steps": "Đáp án: only she didn't have / were not having (any) qualms about.",
-      "mermaid_diagram": "flowchart LR\nA[\"I wish she weren't worried about\"] --> B[\"If only + S + had no qualms about...\"]\nB --> C[\"only she didn't have qualms about\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"I wish she weren't worried about\"] --> B[\"If only + S + had no qualms about...\"]\nB --> C[\"only she didn't have qualms about\"]",
+      "has_audio": false
     },
     {
       "id": 105,
@@ -3957,7 +4106,8 @@
       "tier3_hint": "Điền: is streets ahead of me.",
       "tier4_hint": "Đáp án: is streets ahead of me (at skating).",
       "solution_steps": "Đáp án: is streets ahead of me (at skating).",
-      "mermaid_diagram": "flowchart LR\nA[\"much better than me\"] --> B[\"Idiom: be streets ahead of sb\"]\nB --> C[\"is streets ahead of me\"]"
+      "mermaid_diagram": "flowchart LR\nA[\"much better than me\"] --> B[\"Idiom: be streets ahead of sb\"]\nB --> C[\"is streets ahead of me\"]",
+      "has_audio": false
     }
   ]
 }
