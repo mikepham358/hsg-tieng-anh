@@ -68,6 +68,11 @@ const App = {
   notebookFilterStatus: "all",
   notebookSearchQuery: "",
   editingLogId: null,
+  vocabFilterStatus: "all",
+  vocabSearchQuery: "",
+  activeNotebookTab: "vocab",
+  personalFcIndex: 0,
+  personalFcList: [],
   feedbacks: [],
   currentFeedbackContext: null,
   lastMailtoUrl: null,
@@ -81,6 +86,7 @@ const App = {
     active_q_index: 0,
     attempts: {}, // [qid]: { attempts: [], status: "unanswered", efficiency: 0.0, marked: false, eliminated: [] }
     error_logs: [],
+    vocab_notes: [],
     timer_seconds: {
       "LISTENING_PHONETICS": 30 * 60,
       "LEXICO_GRAMMAR": 45 * 60,
@@ -294,6 +300,74 @@ const DOM = {
   // Socratic Error & Vocabulary Notebook
   modalErrorLog: document.getElementById("modal-error-log"),
   btnCloseErrorLog: document.getElementById("btn-close-error-log"),
+  btnQuickAddVocab: document.getElementById("btn-quick-add-vocab"),
+  nbTabBtnVocab: document.getElementById("nb-tab-btn-vocab"),
+  nbTabBtnTraps: document.getElementById("nb-tab-btn-traps"),
+  badgeTabVocabCount: document.getElementById("badge-tab-vocab-count"),
+  badgeTabTrapsCount: document.getElementById("badge-tab-traps-count"),
+  nbPaneVocab: document.getElementById("nb-pane-vocab"),
+  nbPaneTraps: document.getElementById("nb-pane-traps"),
+  inputFilterVocabSearch: document.getElementById("input-filter-vocab-search"),
+  btnClearVocabSearch: document.getElementById("btn-clear-vocab-search"),
+  btnOpenAddVocabPanel: document.getElementById("btn-open-add-vocab-panel"),
+  btnOpenPersonalFc: document.getElementById("btn-open-personal-fc"),
+  btnExportVocabExcel: document.getElementById("btn-export-vocab-excel"),
+  btnCopyVocabAnki: document.getElementById("btn-copy-vocab-anki"),
+  vocabFilterChips: document.getElementById("vocab-filter-chips"),
+  countVocabAll: document.getElementById("count-vocab-all"),
+  countVocabLearning: document.getElementById("count-vocab-learning"),
+  countVocabMastered: document.getElementById("count-vocab-mastered"),
+  countVocabIdioms: document.getElementById("count-vocab-idioms"),
+  vocabAddPanel: document.getElementById("vocab-add-panel"),
+  vocabAddQBadge: document.getElementById("vocab-add-q-badge"),
+  inputVocabWord: document.getElementById("input-vocab-word"),
+  btnSpeakInputWord: document.getElementById("btn-speak-input-word"),
+  selectVocabType: document.getElementById("select-vocab-type"),
+  inputVocabMeaning: document.getElementById("input-vocab-meaning"),
+  inputVocabIpa: document.getElementById("input-vocab-ipa"),
+  inputVocabCollocations: document.getElementById("input-vocab-collocations"),
+  inputVocabExample: document.getElementById("input-vocab-example"),
+  btnSaveNewVocab: document.getElementById("btn-save-new-vocab"),
+  btnCancelAddVocab: document.getElementById("btn-cancel-add-vocab"),
+  vocabLogList: document.getElementById("vocab-log-list"),
+
+  // Quick Vocab Modal
+  modalQuickVocab: document.getElementById("modal-quick-vocab"),
+  btnCloseQuickVocab: document.getElementById("btn-close-quick-vocab"),
+  qvQContextBadge: document.getElementById("qv-q-context-badge"),
+  qvInputWord: document.getElementById("qv-input-word"),
+  btnQvTestSpeak: document.getElementById("btn-qv-test-speak"),
+  qvSelectType: document.getElementById("qv-select-type"),
+  qvInputMeaning: document.getElementById("qv-input-meaning"),
+  btnToggleQvMore: document.getElementById("btn-toggle-qv-more"),
+  qvMoreFields: document.getElementById("qv-more-fields"),
+  qvInputIpa: document.getElementById("qv-input-ipa"),
+  qvInputCollocations: document.getElementById("qv-input-collocations"),
+  qvInputExample: document.getElementById("qv-input-example"),
+  btnCancelQuickVocab: document.getElementById("btn-cancel-quick-vocab"),
+  btnSubmitQuickVocab: document.getElementById("btn-submit-quick-vocab"),
+
+  // Personal Flashcard Player Modal
+  modalPersonalFc: document.getElementById("modal-personal-flashcard"),
+  btnClosePersonalFc: document.getElementById("btn-close-personal-fc"),
+  pfcCounter: document.getElementById("pfc-counter"),
+  pfcStatusBadge: document.getElementById("pfc-status-badge"),
+  pfcCardScene: document.getElementById("pfc-card-scene"),
+  pfcCardInner: document.getElementById("pfc-card-inner"),
+  pfcCardType: document.getElementById("pfc-card-type"),
+  pfcCardWord: document.getElementById("pfc-card-word"),
+  pfcCardIpa: document.getElementById("pfc-card-ipa"),
+  btnPfcSpeak: document.getElementById("btn-pfc-speak"),
+  pfcCardMeaning: document.getElementById("pfc-card-meaning"),
+  pfcCardExample: document.getElementById("pfc-card-example"),
+  pfcCardCollocations: document.getElementById("pfc-card-collocations"),
+  pfcCardQOrigin: document.getElementById("pfc-card-q-origin"),
+  btnPfcPrev: document.getElementById("btn-pfc-prev"),
+  btnPfcNext: document.getElementById("btn-pfc-next"),
+  btnPfcToggleMaster: document.getElementById("btn-pfc-toggle-master"),
+  pfcMasterIcon: document.getElementById("pfc-master-icon"),
+  pfcMasterText: document.getElementById("pfc-master-text"),
+
   btnAddNewError: document.getElementById("btn-add-new-error"),
   errorLogList: document.getElementById("error-log-list"),
   inputFilterErrSearch: document.getElementById("input-filter-err-search"),
@@ -467,6 +541,8 @@ function loadLocalState() {
         App.studentState.error_logs = [];
       }
 
+      App.studentState.vocab_notes = parsedTest.vocab_notes || [];
+
       if (parsedTest.timer_seconds) {
         App.studentState.timer_seconds = parsedTest.timer_seconds;
       } else {
@@ -519,10 +595,11 @@ function saveLocalState() {
 
     // 2. Save Test-Specific State
     const testState = {
-      active_module: App.activeModuleCode || "RW_Module1",
+      active_module: App.activeModuleCode || "LISTENING_PHONETICS",
       active_q_index: App.currentIndex || 0,
       attempts: App.studentState.attempts || {},
       error_logs: App.studentState.error_logs || [],
+      vocab_notes: App.studentState.vocab_notes || [],
       timer_seconds: App.studentState.timer_seconds || {}
     };
     const testKey = getStorageKeyForTest(App.activeTestId);
@@ -2034,9 +2111,391 @@ function formatVocabHtml(vocabText) {
   return `<span>${escapeHtml(vocabText)}</span>`;
 }
 
+// ================= SMART VOCABULARY & ERROR NOTEBOOK CONTROLLER =================
+function speakWord(text) {
+  if (!text || !window.speechSynthesis) return;
+  try {
+    window.speechSynthesis.cancel();
+    const u = new SpeechSynthesisUtterance(text);
+    u.lang = "en-US";
+    u.rate = 0.9;
+    window.speechSynthesis.speak(u);
+  } catch (e) {
+    console.warn("SpeechSynthesis error:", e);
+  }
+}
+
+function jumpToQuestionById(qId) {
+  if (!qId || !App.questions) return;
+  const idx = App.questions.findIndex(q => String(q.id) === String(qId) || q.master_id === qId);
+  if (idx !== -1) {
+    App.currentIndex = idx;
+    renderCurrentQuestion();
+    showView("practice");
+  }
+}
+
+function updateTotalNotebookBadge() {
+  const errList = App.studentState.error_logs || [];
+  const vocabList = App.studentState.vocab_notes || [];
+  const totalNotes = errList.length + vocabList.length;
+
+  if (DOM.badgeErrorCount) DOM.badgeErrorCount.textContent = totalNotes;
+  if (DOM.badgeNotebookCount) {
+    DOM.badgeNotebookCount.textContent = `${vocabList.length} từ vựng • ${errList.length} bẫy sai`;
+  }
+  if (DOM.badgeTabVocabCount) {
+    DOM.badgeTabVocabCount.textContent = vocabList.length;
+  }
+  if (DOM.badgeTabTrapsCount) {
+    DOM.badgeTabTrapsCount.textContent = errList.length;
+  }
+}
+
 function updateErrorBadge() {
-  const unres = (App.studentState.error_logs || []).filter(l => l.status !== "Đã triệt tiêu").length;
-  if (DOM.badgeErrorCount) DOM.badgeErrorCount.textContent = unres;
+  updateTotalNotebookBadge();
+}
+
+function switchNotebookTab(tabName) {
+  App.activeNotebookTab = tabName;
+  if (DOM.nbTabBtnVocab) DOM.nbTabBtnVocab.classList.toggle("active", tabName === "vocab");
+  if (DOM.nbTabBtnTraps) DOM.nbTabBtnTraps.classList.toggle("active", tabName === "traps");
+  if (DOM.nbPaneVocab) DOM.nbPaneVocab.classList.toggle("hidden", tabName !== "vocab");
+  if (DOM.nbPaneTraps) DOM.nbPaneTraps.classList.toggle("hidden", tabName !== "traps");
+
+  if (tabName === "vocab") {
+    renderVocabNotes();
+  } else {
+    renderErrorLogs();
+  }
+}
+
+function renderVocabNotes() {
+  const list = App.studentState.vocab_notes || [];
+  const total = list.length;
+  const learning = list.filter(v => v.status !== "mastered").length;
+  const mastered = list.filter(v => v.status === "mastered").length;
+  const idioms = list.filter(v => v.type === "idiom" || v.type === "phrasal").length;
+
+  if (DOM.countVocabAll) DOM.countVocabAll.textContent = total;
+  if (DOM.countVocabLearning) DOM.countVocabLearning.textContent = learning;
+  if (DOM.countVocabMastered) DOM.countVocabMastered.textContent = mastered;
+  if (DOM.countVocabIdioms) DOM.countVocabIdioms.textContent = idioms;
+
+  updateTotalNotebookBadge();
+
+  if (!DOM.vocabLogList) return;
+  DOM.vocabLogList.innerHTML = "";
+
+  const qLower = (App.vocabSearchQuery || "").toLowerCase();
+  const filtered = list.filter(item => {
+    if (App.vocabFilterStatus === "learning" && item.status === "mastered") return false;
+    if (App.vocabFilterStatus === "mastered" && item.status !== "mastered") return false;
+    if (App.vocabFilterStatus === "idiom_phrasal" && item.type !== "idiom" && item.type !== "phrasal") return false;
+
+    if (!qLower) return true;
+    const target = [item.word, item.meaning, item.type, item.ipa, item.example, item.collocations, item.q_label].filter(Boolean).join(" ").toLowerCase();
+    return target.includes(qLower);
+  });
+
+  if (filtered.length === 0) {
+    DOM.vocabLogList.innerHTML = `
+      <div style="grid-column: 1 / -1; text-align: center; padding: 40px 16px; color: #64748b;">
+        <div style="font-size: 36px; margin-bottom: 8px;">📖</div>
+        <div style="font-weight: 700; font-size: 15px; color: #1e293b;">Chưa có từ vựng nào trong mục này</div>
+        <div style="font-size: 13px; margin-top: 4px;">
+          ${qLower ? `Không tìm thấy từ khớp với "${escapeHtml(qLower)}".` : `Em có thể bấm <strong>+ Thêm từ mới</strong> hoặc bấm <strong>📖 + Ghi từ mới (phím V)</strong> khi làm bài!`}
+        </div>
+      </div>
+    `;
+    return;
+  }
+
+  filtered.forEach(item => {
+    const card = document.createElement("div");
+    card.className = `vocab-entry-card ${item.status === "mastered" ? "is-mastered" : ""}`;
+    card.setAttribute("data-id", item.id);
+
+    const typeLabels = {
+      adjective: "adj",
+      noun: "n",
+      verb: "v",
+      adverb: "adv",
+      idiom: "idiom",
+      phrasal: "phrasal",
+      collocation: "colloc",
+      other: "word"
+    };
+    const typeShort = typeLabels[item.type] || item.type || "word";
+
+    card.innerHTML = `
+      <div class="v-card-top">
+        <div class="v-card-word-group">
+          <span class="v-card-word">${escapeHtml(item.word)}</span>
+          <span class="v-card-type">[${escapeHtml(typeShort)}]</span>
+          <button type="button" class="btn-v-speak" title="Nghe phát âm">🔊</button>
+          ${item.ipa ? `<span class="v-card-ipa">${escapeHtml(item.ipa)}</span>` : ""}
+        </div>
+        <div class="v-card-badges">
+          ${item.q_label ? `<span class="v-badge-q" title="Bấm để nhảy tới câu hỏi">${escapeHtml(item.q_label)}</span>` : ""}
+          <button type="button" class="v-status-toggle ${item.status === "mastered" ? "mastered" : ""}">
+            ${item.status === "mastered" ? "✅ Đã thuộc" : "🔄 Đang học"}
+          </button>
+        </div>
+      </div>
+      <div class="v-card-meaning">
+        <strong>Nghĩa:</strong> ${escapeHtml(item.meaning || "")}
+      </div>
+      ${item.example ? `
+        <div class="v-card-example">
+          <strong>Ví dụ:</strong> ${escapeHtml(item.example)}
+        </div>
+      ` : ""}
+      ${item.collocations ? `
+        <div class="v-card-collocations">
+          <strong>Cụm đi kèm:</strong> ${escapeHtml(item.collocations)}
+        </div>
+      ` : ""}
+      <div class="v-card-actions">
+        <button type="button" class="btn-v-edit">✏️ Sửa</button>
+        <button type="button" class="btn-v-delete">🗑️ Xóa</button>
+      </div>
+    `;
+
+    card.querySelector(".btn-v-speak").addEventListener("click", () => {
+      speakWord(item.word);
+    });
+
+    const qBadge = card.querySelector(".v-badge-q");
+    if (qBadge && item.question_id) {
+      qBadge.addEventListener("click", () => {
+        jumpToQuestionById(item.question_id);
+        if (DOM.modalErrorLog) DOM.modalErrorLog.classList.add("hidden");
+      });
+    }
+
+    card.querySelector(".v-status-toggle").addEventListener("click", () => {
+      item.status = (item.status === "mastered") ? "learning" : "mastered";
+      saveLocalState();
+      renderVocabNotes();
+    });
+
+    card.querySelector(".btn-v-edit").addEventListener("click", () => {
+      openEditVocabPrompt(item);
+    });
+
+    card.querySelector(".btn-v-delete").addEventListener("click", () => {
+      if (confirm(`Em có chắc muốn xóa từ "${item.word}" khỏi sổ tay không?`)) {
+        App.studentState.vocab_notes = (App.studentState.vocab_notes || []).filter(v => v.id !== item.id);
+        saveLocalState();
+        renderVocabNotes();
+      }
+    });
+
+    DOM.vocabLogList.appendChild(card);
+  });
+}
+
+function openEditVocabPrompt(item) {
+  const newWord = prompt("Từ vựng / Cụm từ:", item.word);
+  if (!newWord || !newWord.trim()) return;
+  const newMeaning = prompt("Nghĩa tiếng Việt:", item.meaning || "");
+  if (!newMeaning || !newMeaning.trim()) return;
+  const newExample = prompt("Câu ví dụ / Ngữ cảnh:", item.example || "");
+
+  item.word = newWord.trim();
+  item.meaning = newMeaning.trim();
+  item.example = newExample ? newExample.trim() : "";
+  saveLocalState();
+  renderVocabNotes();
+}
+
+function openQuickVocabModal(prefillWord = "", prefillExample = "") {
+  pauseTimer();
+  const curQ = App.currentQuestion;
+  const qLabel = curQ ? (curQ.q_label || `Câu ${curQ.id}`) : "Chung";
+
+  if (DOM.qvQContextBadge) {
+    DOM.qvQContextBadge.textContent = curQ ? `${qLabel} (${curQ.section || curQ.module_code || ""})` : "Ghi chép tự do";
+  }
+
+  // Pre-fill word from selection if any
+  let sel = "";
+  try {
+    sel = window.getSelection().toString().trim();
+  } catch (e) {}
+  const wordToUse = prefillWord || (sel && sel.length < 60 ? sel : "");
+
+  if (DOM.qvInputWord) DOM.qvInputWord.value = wordToUse;
+  if (DOM.qvInputMeaning) DOM.qvInputMeaning.value = "";
+  if (DOM.qvInputIpa) DOM.qvInputIpa.value = "";
+  if (DOM.qvInputCollocations) DOM.qvInputCollocations.value = "";
+
+  // Pre-fill example
+  let exampleText = prefillExample;
+  if (!exampleText && curQ) {
+    exampleText = curQ.prompt || curQ.passage || "";
+  }
+  if (DOM.qvInputExample) DOM.qvInputExample.value = exampleText;
+
+  if (DOM.qvMoreFields) DOM.qvMoreFields.classList.add("hidden");
+
+  if (DOM.modalQuickVocab) {
+    DOM.modalQuickVocab.classList.remove("hidden");
+    setTimeout(() => {
+      if (wordToUse && DOM.qvInputMeaning) {
+        DOM.qvInputMeaning.focus();
+      } else if (DOM.qvInputWord) {
+        DOM.qvInputWord.focus();
+      }
+    }, 150);
+  }
+}
+
+function closeQuickVocabModal() {
+  if (DOM.modalQuickVocab) DOM.modalQuickVocab.classList.add("hidden");
+  syncTimerState();
+}
+
+function handleSaveQuickVocab() {
+  const word = DOM.qvInputWord ? DOM.qvInputWord.value.trim() : "";
+  const meaning = DOM.qvInputMeaning ? DOM.qvInputMeaning.value.trim() : "";
+  if (!word || !meaning) {
+    alert("Vui lòng điền ít nhất Từ vựng và Nghĩa tiếng Việt!");
+    return;
+  }
+
+  const curQ = App.currentQuestion;
+  const newEntry = {
+    id: "voc_" + Date.now() + "_" + Math.random().toString(36).substr(2, 4),
+    word: word,
+    type: DOM.qvSelectType ? DOM.qvSelectType.value : "adjective",
+    meaning: meaning,
+    ipa: DOM.qvInputIpa ? DOM.qvInputIpa.value.trim() : "",
+    collocations: DOM.qvInputCollocations ? DOM.qvInputCollocations.value.trim() : "",
+    example: DOM.qvInputExample ? DOM.qvInputExample.value.trim() : "",
+    question_id: curQ ? curQ.id : null,
+    q_label: curQ ? (curQ.q_label || `Câu ${curQ.id}`) : "",
+    module: curQ ? curQ.module_code : "",
+    status: "learning",
+    created_at: new Date().toISOString()
+  };
+
+  if (!App.studentState.vocab_notes) App.studentState.vocab_notes = [];
+  App.studentState.vocab_notes.unshift(newEntry);
+  saveLocalState();
+  renderVocabNotes();
+  closeQuickVocabModal();
+
+  showAlert(true, `✨ Đã lưu từ "${word}" vào Sổ tay từ vựng!`);
+}
+
+// Personal Flashcard Mode
+function openPersonalFlashcardModal() {
+  const list = App.studentState.vocab_notes || [];
+  if (list.length === 0) {
+    alert("Em chưa lưu từ vựng nào vào sổ tay! Hãy ghi lại một vài từ mới trước khi ôn tập nhé.");
+    return;
+  }
+  App.personalFcList = [...list];
+  App.personalFcIndex = 0;
+  renderPersonalFlashcardCard();
+  if (DOM.modalPersonalFc) DOM.modalPersonalFc.classList.remove("hidden");
+}
+
+function renderPersonalFlashcardCard() {
+  const list = App.personalFcList || [];
+  if (list.length === 0) return;
+  const idx = App.personalFcIndex;
+  const item = list[idx];
+  if (!item) return;
+
+  if (DOM.pfcCounter) DOM.pfcCounter.textContent = `Thẻ ${idx + 1} / ${list.length}`;
+  if (DOM.pfcStatusBadge) {
+    DOM.pfcStatusBadge.textContent = item.status === "mastered" ? "✅ Đã thuộc" : "🔄 Đang học";
+    DOM.pfcStatusBadge.className = `pfc-status-badge ${item.status === "mastered" ? "mastered" : ""}`;
+  }
+  if (DOM.pfcCardType) DOM.pfcCardType.textContent = `[${item.type || "word"}]`;
+  if (DOM.pfcCardWord) DOM.pfcCardWord.textContent = item.word;
+  if (DOM.pfcCardIpa) DOM.pfcCardIpa.textContent = item.ipa || "";
+  if (DOM.pfcCardMeaning) DOM.pfcCardMeaning.textContent = item.meaning;
+  if (DOM.pfcCardExample) {
+    DOM.pfcCardExample.innerHTML = item.example ? `<strong>Ví dụ:</strong> "${escapeHtml(item.example)}"` : "<em>Chưa có ví dụ</em>";
+  }
+  if (DOM.pfcCardCollocations) {
+    DOM.pfcCardCollocations.style.display = item.collocations ? "block" : "none";
+    DOM.pfcCardCollocations.innerHTML = `<strong>Cụm đi kèm:</strong> ${escapeHtml(item.collocations || "")}`;
+  }
+  if (DOM.pfcCardQOrigin) {
+    DOM.pfcCardQOrigin.textContent = item.q_label ? `📘 Nguồn: ${item.q_label}` : "";
+  }
+
+  if (DOM.pfcCardInner) DOM.pfcCardInner.classList.remove("flipped");
+
+  if (DOM.pfcMasterText) {
+    DOM.pfcMasterText.textContent = item.status === "mastered" ? "Đánh dấu Đang học" : "Đánh dấu Đã thuộc";
+  }
+  if (DOM.pfcMasterIcon) {
+    DOM.pfcMasterIcon.textContent = item.status === "mastered" ? "🔄" : "✅";
+  }
+}
+
+function exportVocabToExcel() {
+  const list = App.studentState.vocab_notes || [];
+  if (list.length === 0) {
+    alert("Chưa có từ vựng nào để xuất file!");
+    return;
+  }
+  if (!window.XLSX) {
+    alert("Thư viện Excel đang tải, vui lòng thử lại sau giây lát.");
+    return;
+  }
+
+  const rows = [
+    ["STT", "Từ vựng / Cụm từ", "Từ loại", "Phiên âm", "Nghĩa tiếng Việt", "Collocations / Đồng nghĩa", "Ví dụ / Ngữ cảnh", "Câu hỏi nguồn", "Tình trạng"]
+  ];
+
+  list.forEach((item, i) => {
+    rows.push([
+      i + 1,
+      item.word || "",
+      item.type || "",
+      item.ipa || "",
+      item.meaning || "",
+      item.collocations || "",
+      item.example || "",
+      item.q_label || "",
+      item.status === "mastered" ? "Đã thuộc" : "Đang học"
+    ]);
+  });
+
+  const ws = XLSX.utils.aoa_to_sheet(rows);
+  const wb = XLSX.utils.book_new();
+  XLSX.utils.book_append_sheet(wb, ws, "So_Tay_Tu_Vung");
+
+  const studentName = (App.studentState.student_name || "Hoc_Sinh").replace(/\s+/g, '_');
+  XLSX.writeFile(wb, `So_Tay_Tu_Vung_${studentName}.xlsx`);
+}
+
+function copyVocabToAnki() {
+  const list = App.studentState.vocab_notes || [];
+  if (list.length === 0) {
+    alert("Chưa có từ vựng nào để sao chép!");
+    return;
+  }
+
+  const lines = list.map(item => {
+    const front = `${item.word} [${item.type || ""}] ${item.ipa || ""}`.trim();
+    const back = `${item.meaning}${item.example ? " | Ví dụ: " + item.example : ""}`.trim();
+    return `${front}\t${back}`;
+  });
+
+  const text = lines.join("\n");
+  navigator.clipboard.writeText(text).then(() => {
+    alert(`📋 Đã sao chép ${list.length} từ vựng vào bộ nhớ đệm!\nEm có thể dán (Paste) trực tiếp vào Anki hoặc Quizlet.`);
+  }).catch(() => {
+    prompt("Sao chép danh sách từ vựng bên dưới:", text);
+  });
 }
 
 function renderErrorLogs() {
@@ -4129,17 +4588,211 @@ function setupEventListeners() {
     syncTimerState();
   });
 
+  // Open Smart Notebook (Default to Vocab Tab)
   DOM.btnOpenErrorLog.addEventListener("click", () => {
     pauseTimer();
     App.editingLogId = null;
     if (DOM.notebookAddPanel) DOM.notebookAddPanel.classList.add("hidden");
-    renderErrorLogs();
+    if (DOM.vocabAddPanel) DOM.vocabAddPanel.classList.add("hidden");
+    switchNotebookTab(App.activeNotebookTab || "vocab");
     DOM.modalErrorLog.classList.remove("hidden");
   });
   DOM.btnCloseErrorLog.addEventListener("click", () => {
     DOM.modalErrorLog.classList.add("hidden");
     syncTimerState();
   });
+
+  // Smart Notebook Tab Switching
+  if (DOM.nbTabBtnVocab) {
+    DOM.nbTabBtnVocab.addEventListener("click", () => switchNotebookTab("vocab"));
+  }
+  if (DOM.nbTabBtnTraps) {
+    DOM.nbTabBtnTraps.addEventListener("click", () => switchNotebookTab("traps"));
+  }
+
+  // Quick Add Vocab Button on Question Action Bar
+  if (DOM.btnQuickAddVocab) {
+    DOM.btnQuickAddVocab.addEventListener("click", () => {
+      openQuickVocabModal();
+    });
+  }
+
+  // Quick Vocab Modal events
+  if (DOM.btnCloseQuickVocab) DOM.btnCloseQuickVocab.addEventListener("click", closeQuickVocabModal);
+  if (DOM.btnCancelQuickVocab) DOM.btnCancelQuickVocab.addEventListener("click", closeQuickVocabModal);
+  if (DOM.btnSubmitQuickVocab) DOM.btnSubmitQuickVocab.addEventListener("click", handleSaveQuickVocab);
+  if (DOM.btnToggleQvMore) {
+    DOM.btnToggleQvMore.addEventListener("click", () => {
+      if (DOM.qvMoreFields) DOM.qvMoreFields.classList.toggle("hidden");
+    });
+  }
+  if (DOM.btnQvTestSpeak) {
+    DOM.btnQvTestSpeak.addEventListener("click", () => {
+      speakWord(DOM.qvInputWord ? DOM.qvInputWord.value.trim() : "");
+    });
+  }
+  if (DOM.qvInputWord) {
+    DOM.qvInputWord.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        if (DOM.qvInputMeaning && !DOM.qvInputMeaning.value.trim()) {
+          DOM.qvInputMeaning.focus();
+        } else {
+          handleSaveQuickVocab();
+        }
+      }
+    });
+  }
+  if (DOM.qvInputMeaning) {
+    DOM.qvInputMeaning.addEventListener("keydown", (e) => {
+      if (e.key === "Enter") {
+        handleSaveQuickVocab();
+      }
+    });
+  }
+
+  // Vocab Panel inside Notebook
+  if (DOM.btnOpenAddVocabPanel) {
+    DOM.btnOpenAddVocabPanel.addEventListener("click", () => {
+      if (!DOM.vocabAddPanel) return;
+      DOM.vocabAddPanel.classList.toggle("hidden");
+      if (!DOM.vocabAddPanel.classList.contains("hidden")) {
+        const curQ = App.currentQuestion;
+        if (DOM.vocabAddQBadge) {
+          DOM.vocabAddQBadge.textContent = curQ ? `Câu ${curQ.q_label} (${curQ.section || curQ.module_code || ""})` : "Ghi chép tự do";
+        }
+        if (DOM.inputVocabWord) DOM.inputVocabWord.focus();
+      }
+    });
+  }
+  if (DOM.btnCancelAddVocab) {
+    DOM.btnCancelAddVocab.addEventListener("click", () => {
+      if (DOM.vocabAddPanel) DOM.vocabAddPanel.classList.add("hidden");
+    });
+  }
+  if (DOM.btnSpeakInputWord) {
+    DOM.btnSpeakInputWord.addEventListener("click", () => {
+      speakWord(DOM.inputVocabWord ? DOM.inputVocabWord.value.trim() : "");
+    });
+  }
+  if (DOM.btnSaveNewVocab) {
+    DOM.btnSaveNewVocab.addEventListener("click", () => {
+      const word = DOM.inputVocabWord ? DOM.inputVocabWord.value.trim() : "";
+      const meaning = DOM.inputVocabMeaning ? DOM.inputVocabMeaning.value.trim() : "";
+      if (!word || !meaning) {
+        alert("Vui lòng điền ít nhất Từ vựng và Nghĩa tiếng Việt!");
+        if (DOM.inputVocabWord && !word) DOM.inputVocabWord.focus();
+        else if (DOM.inputVocabMeaning) DOM.inputVocabMeaning.focus();
+        return;
+      }
+      const curQ = App.currentQuestion;
+      const newEntry = {
+        id: "voc_" + Date.now() + "_" + Math.random().toString(36).substr(2, 4),
+        word: word,
+        type: DOM.selectVocabType ? DOM.selectVocabType.value : "adjective",
+        meaning: meaning,
+        ipa: DOM.inputVocabIpa ? DOM.inputVocabIpa.value.trim() : "",
+        collocations: DOM.inputVocabCollocations ? DOM.inputVocabCollocations.value.trim() : "",
+        example: DOM.inputVocabExample ? DOM.inputVocabExample.value.trim() : "",
+        question_id: curQ ? curQ.id : null,
+        q_label: curQ ? (curQ.q_label || `Câu ${curQ.id}`) : "",
+        module: curQ ? curQ.module_code : "",
+        status: "learning",
+        created_at: new Date().toISOString()
+      };
+      if (!App.studentState.vocab_notes) App.studentState.vocab_notes = [];
+      App.studentState.vocab_notes.unshift(newEntry);
+      saveLocalState();
+      renderVocabNotes();
+
+      // Clear add form
+      if (DOM.inputVocabWord) DOM.inputVocabWord.value = "";
+      if (DOM.inputVocabMeaning) DOM.inputVocabMeaning.value = "";
+      if (DOM.inputVocabIpa) DOM.inputVocabIpa.value = "";
+      if (DOM.inputVocabCollocations) DOM.inputVocabCollocations.value = "";
+      if (DOM.inputVocabExample) DOM.inputVocabExample.value = "";
+      if (DOM.vocabAddPanel) DOM.vocabAddPanel.classList.add("hidden");
+      showAlert(true, `✨ Đã thêm từ "${word}" vào sổ từ vựng!`);
+    });
+  }
+
+  // Vocab Filter Chips
+  if (DOM.vocabFilterChips) {
+    DOM.vocabFilterChips.addEventListener("click", (e) => {
+      const chip = e.target.closest(".filter-chip");
+      if (!chip) return;
+      DOM.vocabFilterChips.querySelectorAll(".filter-chip").forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      App.vocabFilterStatus = chip.getAttribute("data-vstatus") || "all";
+      renderVocabNotes();
+    });
+  }
+
+  // Vocab Search
+  if (DOM.inputFilterVocabSearch) {
+    DOM.inputFilterVocabSearch.addEventListener("input", (e) => {
+      App.vocabSearchQuery = e.target.value.trim();
+      if (DOM.btnClearVocabSearch) {
+        DOM.btnClearVocabSearch.classList.toggle("hidden", !App.vocabSearchQuery);
+      }
+      renderVocabNotes();
+    });
+  }
+  if (DOM.btnClearVocabSearch) {
+    DOM.btnClearVocabSearch.addEventListener("click", () => {
+      if (DOM.inputFilterVocabSearch) DOM.inputFilterVocabSearch.value = "";
+      App.vocabSearchQuery = "";
+      DOM.btnClearVocabSearch.classList.add("hidden");
+      renderVocabNotes();
+    });
+  }
+
+  // Personal Flashcard events
+  if (DOM.btnOpenPersonalFc) DOM.btnOpenPersonalFc.addEventListener("click", openPersonalFlashcardModal);
+  if (DOM.btnClosePersonalFc) {
+    DOM.btnClosePersonalFc.addEventListener("click", () => {
+      if (DOM.modalPersonalFc) DOM.modalPersonalFc.classList.add("hidden");
+    });
+  }
+  if (DOM.pfcCardInner) {
+    DOM.pfcCardInner.addEventListener("click", () => {
+      DOM.pfcCardInner.classList.toggle("flipped");
+    });
+  }
+  if (DOM.btnPfcPrev) {
+    DOM.btnPfcPrev.addEventListener("click", () => {
+      if (!App.personalFcList || App.personalFcList.length === 0) return;
+      App.personalFcIndex = (App.personalFcIndex - 1 + App.personalFcList.length) % App.personalFcList.length;
+      renderPersonalFlashcardCard();
+    });
+  }
+  if (DOM.btnPfcNext) {
+    DOM.btnPfcNext.addEventListener("click", () => {
+      if (!App.personalFcList || App.personalFcList.length === 0) return;
+      App.personalFcIndex = (App.personalFcIndex + 1) % App.personalFcList.length;
+      renderPersonalFlashcardCard();
+    });
+  }
+  if (DOM.btnPfcSpeak) {
+    DOM.btnPfcSpeak.addEventListener("click", (e) => {
+      e.stopPropagation();
+      const item = (App.personalFcList || [])[App.personalFcIndex];
+      if (item && item.word) speakWord(item.word);
+    });
+  }
+  if (DOM.btnPfcToggleMaster) {
+    DOM.btnPfcToggleMaster.addEventListener("click", () => {
+      const item = (App.personalFcList || [])[App.personalFcIndex];
+      if (!item) return;
+      item.status = (item.status === "mastered") ? "learning" : "mastered";
+      saveLocalState();
+      renderPersonalFlashcardCard();
+      renderVocabNotes();
+    });
+  }
+
+  // Vocab Export to Excel & Copy to Anki
+  if (DOM.btnExportVocabExcel) DOM.btnExportVocabExcel.addEventListener("click", exportVocabToExcel);
+  if (DOM.btnCopyVocabAnki) DOM.btnCopyVocabAnki.addEventListener("click", copyVocabToAnki);
 
   if (DOM.btnOpenVocab) {
     DOM.btnOpenVocab.addEventListener("click", () => {
@@ -4160,7 +4813,7 @@ function setupEventListeners() {
     });
   }
 
-  // Notebook Add Entry Panel
+  // Traps/Error Add Entry Panel
   if (DOM.btnAddNewError) {
     DOM.btnAddNewError.addEventListener("click", () => {
       if (!DOM.notebookAddPanel) return;
@@ -4169,7 +4822,7 @@ function setupEventListeners() {
         DOM.notebookAddPanel.classList.remove("hidden");
         const q = App.currentQuestion;
         if (DOM.addPanelQBadge) {
-          DOM.addPanelQBadge.textContent = q ? `Câu ${q.q_label} (${q.topic})` : "Ghi chép tự do";
+          DOM.addPanelQBadge.textContent = q ? `Câu ${q.q_label} (${q.topic || ""})` : "Ghi chép tự do";
         }
         if (DOM.inputNewDetail) DOM.inputNewDetail.focus();
       } else {
@@ -4197,12 +4850,12 @@ function setupEventListeners() {
         id: `err_man_${Date.now()}`,
         question_id: q ? q.id : "custom",
         q_label: q ? q.q_label : "Ghi chép",
-        module: q ? q.module_title : "SAT",
+        module: q ? q.module_title : "HSG",
         skill: q ? q.topic : "Luyện thi",
         date: new Date().toLocaleDateString("vi-VN"),
         wrong_attempts: [],
         correct_answer: q ? q.correct_answer : "",
-        root_cause: DOM.selectNewTrap ? DOM.selectNewTrap.value : "Bẫy SAT Trap",
+        root_cause: DOM.selectNewTrap ? DOM.selectNewTrap.value : "Bẫy đề thi HSG",
         trap_detail: detail,
         student_notes: DOM.inputNewNotes ? DOM.inputNewNotes.value.trim() : "",
         vocabulary: DOM.inputNewVocab ? DOM.inputNewVocab.value.trim() : "",
@@ -4222,6 +4875,7 @@ function setupEventListeners() {
       saveLocalState();
       updateErrorBadge();
       renderErrorLogs();
+      showAlert(true, "✨ Đã lưu ghi chép bẫy đề thi thành công!");
     });
   }
 
@@ -4421,6 +5075,7 @@ function setupEventListeners() {
 
   // Keyboard Shortcuts
   window.addEventListener("keydown", (e) => {
+    // Escape or navigation inside active modals
     if (DOM.modalMermaid && !DOM.modalMermaid.classList.contains("hidden")) {
       if (e.key === "Escape") {
         closeMermaidModal();
@@ -4444,12 +5099,77 @@ function setupEventListeners() {
       }
       return;
     }
+
+    if (DOM.modalQuickVocab && !DOM.modalQuickVocab.classList.contains("hidden")) {
+      if (e.key === "Escape") {
+        closeQuickVocabModal();
+        e.preventDefault();
+        return;
+      }
+    }
+
+    if (DOM.modalPersonalFc && !DOM.modalPersonalFc.classList.contains("hidden")) {
+      if (e.key === "Escape") {
+        if (DOM.pfcBtnClose) DOM.pfcBtnClose.click();
+        e.preventDefault();
+        return;
+      }
+      if (e.key === " " || e.code === "Space") {
+        if (DOM.pfcCardInner) DOM.pfcCardInner.classList.toggle("flipped");
+        e.preventDefault();
+        return;
+      }
+      if (e.key === "ArrowLeft" || e.key === "[") {
+        if (DOM.pfcBtnPrev) DOM.pfcBtnPrev.click();
+        e.preventDefault();
+        return;
+      }
+      if (e.key === "ArrowRight" || e.key === "]") {
+        if (DOM.pfcBtnNext) DOM.pfcBtnNext.click();
+        e.preventDefault();
+        return;
+      }
+      if (e.key.toLowerCase() === "m") {
+        if (DOM.pfcBtnMaster) DOM.pfcBtnMaster.click();
+        e.preventDefault();
+        return;
+      }
+      if (e.key.toLowerCase() === "s") {
+        if (DOM.pfcBtnSpeak) DOM.pfcBtnSpeak.click();
+        e.preventDefault();
+        return;
+      }
+      return;
+    }
+
+    if (DOM.modalErrorLog && !DOM.modalErrorLog.classList.contains("hidden")) {
+      if (e.key === "Escape") {
+        DOM.btnCloseErrorLog.click();
+        e.preventDefault();
+        return;
+      }
+    }
+
     if (["INPUT", "TEXTAREA", "SELECT"].includes(e.target.tagName)) return;
 
     const key = e.key.toUpperCase();
     if (key === "Z" && !e.ctrlKey && !e.metaKey && !e.altKey) {
       if (document.body.classList.contains("in-practice")) {
         toggleZenMode();
+        e.preventDefault();
+        return;
+      }
+    }
+    if (key === "V" && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      if (document.body.classList.contains("in-practice")) {
+        openQuickVocabModal();
+        e.preventDefault();
+        return;
+      }
+    }
+    if (key === "N" && !e.ctrlKey && !e.metaKey && !e.altKey) {
+      if (document.body.classList.contains("in-practice")) {
+        DOM.btnOpenErrorLog.click();
         e.preventDefault();
         return;
       }

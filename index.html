@@ -519,13 +519,17 @@
       <!-- Question Main Card -->
       <div class="question-main-scroll">
         
-        <!-- Bluebook Mark for Review (Left-aligned, ngay trên lựa chọn A) -->
+        <!-- Bluebook Mark for Review & Quick Vocab (Left-aligned, ngay trên lựa chọn A) -->
         <div class="q-action-row" id="q-action-row">
           <label class="mark-review-label">
             <input type="checkbox" id="chk-mark-review">
             <span class="bookmark-icon">🔖</span>
             <span>Mark for Review</span>
           </label>
+          <button type="button" class="btn-quick-add-vocab" id="btn-quick-add-vocab" title="Ghi từ mới câu này vào sổ tay thông minh (Phím tắt: V)">
+            <span class="icon">📖</span>
+            <span>+ Ghi từ mới</span>
+          </button>
         </div>
 
         <!-- ================= RESPONSE INPUT AREA ================= -->
@@ -760,95 +764,326 @@
     </div>
   </div>
 
-  <!-- ================= MODAL: SOCRATIC ERROR & VOCABULARY NOTEBOOK ================= -->
+  <!-- ================= MODAL: SMART VOCABULARY & ERROR NOTEBOOK ================= -->
   <div class="modal-overlay hidden" id="modal-error-log">
-    <div class="modal-card error-modal-card">
+    <div class="modal-card error-modal-card smart-notebook-card">
       <div class="modal-card-header g-ux-modal-header">
         <div class="header-title-group">
           <div class="header-main-title">
             <span class="header-icon">📓</span>
-            <h3>Sổ tay Thử sai & Từ vựng Socratic</h3>
-            <span class="live-count-badge" id="badge-notebook-count">0 ghi chép</span>
+            <h3>Sổ Ghi Chép & Từ Vựng Thông Minh</h3>
+            <span class="live-count-badge" id="badge-notebook-count">0 từ vựng • 0 bẫy sai</span>
           </div>
-          <p class="header-sub-desc">Ghi chép bẫy đề thi, ghi chú tư duy & từ mới tiếng Anh — Tự động lưu trên thiết bị của em</p>
+          <p class="header-sub-desc">Ghi chép từ vựng C1-C2, collocations, idioms & bẫy ngữ pháp — Lưu 100% trên thiết bị cá nhân</p>
         </div>
         <button class="btn-close-modal" id="btn-close-error-log" title="Đóng">✕</button>
       </div>
 
+      <!-- Top Tab Switcher: 1. Từ Vựng & Cụm Từ | 2. Bẫy & Lỗi Sai -->
+      <div class="smart-notebook-tabs">
+        <button type="button" class="s-nb-tab active" id="nb-tab-btn-vocab" data-tab="vocab">
+          <span>📚 Sổ Từ Mới & Cụm Từ</span>
+          <span class="tab-chip-count" id="badge-tab-vocab-count">0</span>
+        </button>
+        <button type="button" class="s-nb-tab" id="nb-tab-btn-traps" data-tab="traps">
+          <span>🎯 Sổ Bẫy & Lỗi Sai</span>
+          <span class="tab-chip-count" id="badge-tab-traps-count">0</span>
+        </button>
+      </div>
+
       <div class="modal-card-body">
-        <!-- Google UX Minimalist Toolbar -->
-        <div class="notebook-toolbar">
-          <div class="g-search-wrapper">
-            <span class="g-search-icon">🔍</span>
-            <input type="text" id="input-filter-err-search" class="g-search-input" placeholder="Tìm theo câu hỏi, từ mới, bẫy SAT, ghi chú...">
-            <button class="btn-clear-search hidden" id="btn-clear-err-search" title="Xóa tìm kiếm">✕</button>
+        
+        <!-- PANE 1: VOCABULARY NOTEBOOK -->
+        <div class="nb-pane-content" id="nb-pane-vocab">
+          <!-- Vocab Toolbar -->
+          <div class="notebook-toolbar">
+            <div class="g-search-wrapper">
+              <span class="g-search-icon">🔍</span>
+              <input type="text" id="input-filter-vocab-search" class="g-search-input" placeholder="Tìm theo từ mới, nghĩa tiếng Việt, cụm từ, câu hỏi...">
+              <button type="button" class="btn-clear-search hidden" id="btn-clear-vocab-search" title="Xóa tìm kiếm">✕</button>
+            </div>
+            <div class="nb-toolbar-actions">
+              <button type="button" class="btn-pill btn-pill-primary" id="btn-open-add-vocab-panel" title="Thêm từ mới vào sổ">
+                <span class="icon">➕</span>
+                <span>Thêm từ mới</span>
+              </button>
+              <button type="button" class="btn-pill btn-pill-tonal" id="btn-open-personal-fc" title="Lật thẻ Flashcard 3D ôn các từ em đã ghi chép">
+                <span class="icon">🎴</span>
+                <span>Luyện Flashcard</span>
+              </button>
+              <button type="button" class="btn-pill btn-pill-subtle" id="btn-export-vocab-excel" title="Xuất toàn bộ danh sách từ vựng ra file Excel">
+                <span class="icon">📥</span>
+                <span>Xuất Excel</span>
+              </button>
+              <button type="button" class="btn-pill btn-pill-subtle" id="btn-copy-vocab-anki" title="Sao chép danh sách dạng Quizlet / Anki">
+                <span class="icon">📋</span>
+                <span>Sao chép</span>
+              </button>
+            </div>
           </div>
-          <button class="btn-pill btn-pill-primary" id="btn-add-new-error" title="Thêm ghi chép hoặc từ mới cho câu hiện tại">
-            <span class="icon">➕</span>
-            <span>Thêm ghi chép / Từ mới</span>
+
+          <!-- Vocab Filter Chips -->
+          <div class="notebook-filter-chips" id="vocab-filter-chips">
+            <button type="button" class="filter-chip active" data-vstatus="all">Tất cả (<span id="count-vocab-all">0</span>)</button>
+            <button type="button" class="filter-chip chip-tracking" data-vstatus="learning">🔄 Đang học (<span id="count-vocab-learning">0</span>)</button>
+            <button type="button" class="filter-chip chip-resolved" data-vstatus="mastered">✅ Đã thuộc (<span id="count-vocab-mastered">0</span>)</button>
+            <button type="button" class="filter-chip" data-vstatus="idiom_phrasal">🌟 Idioms & Phrasal (<span id="count-vocab-idioms">0</span>)</button>
+          </div>
+
+          <!-- Inline Add Vocab Panel (Collapsible) -->
+          <div class="notebook-add-panel hidden" id="vocab-add-panel">
+            <div class="add-panel-header">
+              <h4>➕ Thêm Từ Mới Vào Sổ Tay</h4>
+              <span class="current-q-pill" id="vocab-add-q-badge">Câu hiện tại</span>
+            </div>
+            <div class="add-panel-grid">
+              <div class="form-group">
+                <label for="input-vocab-word">1. Từ vựng / Cụm từ <span class="req">*</span></label>
+                <div style="display:flex; gap:6px;">
+                  <input type="text" id="input-vocab-word" class="g-input" placeholder="Ví dụ: ubiquitous, come in handy..." style="flex:1;">
+                  <button type="button" class="btn-test-speak" id="btn-speak-input-word" title="Nghe phát âm">🔊</button>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="select-vocab-type">2. Từ loại / Phân loại</label>
+                <select id="select-vocab-type" class="g-select">
+                  <option value="adjective">Adjective [adj] (Tính từ)</option>
+                  <option value="noun">Noun [n] (Danh từ)</option>
+                  <option value="verb">Verb [v] (Động từ)</option>
+                  <option value="adverb">Adverb [adv] (Phó từ)</option>
+                  <option value="idiom">Idiom (Thành ngữ)</option>
+                  <option value="phrasal">Phrasal Verb (Cụm động từ)</option>
+                  <option value="collocation">Collocation (Cụm từ cố định)</option>
+                  <option value="other">Khác</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label for="input-vocab-meaning">3. Nghĩa tiếng Việt & Sắc thái ngữ cảnh <span class="req">*</span></label>
+                <input type="text" id="input-vocab-meaning" class="g-input" placeholder="Nghĩa xúc tích, chính xác...">
+              </div>
+              <div class="form-group">
+                <label for="input-vocab-ipa">4. Phiên âm IPA (Tùy chọn)</label>
+                <input type="text" id="input-vocab-ipa" class="g-input" placeholder="/juːˈbɪk.wɪ.təs/">
+              </div>
+              <div class="form-group">
+                <label for="input-vocab-collocations">5. Collocations & Từ đồng nghĩa (Tùy chọn)</label>
+                <input type="text" id="input-vocab-collocations" class="g-input" placeholder="Ví dụ: ubiquitous presence, omnipresent...">
+              </div>
+              <div class="form-group full-width">
+                <label for="input-vocab-example">6. Câu ví dụ / Ngữ cảnh trích từ đề bài</label>
+                <textarea id="input-vocab-example" class="g-textarea" rows="2" placeholder="Trích câu chứa từ này trong đề bài để ghi nhớ ngữ cảnh..."></textarea>
+              </div>
+            </div>
+            <div class="add-panel-actions">
+              <button type="button" class="btn-sm btn-subtle" id="btn-cancel-add-vocab">✕ Hủy</button>
+              <button type="button" class="btn-sm btn-primary-g" id="btn-save-new-vocab">💾 Lưu vào sổ từ vựng</button>
+            </div>
+          </div>
+
+          <!-- Vocab Items List -->
+          <div class="vocab-log-list" id="vocab-log-list">
+            <!-- Dynamically populated from studentState.vocab_notes -->
+          </div>
+        </div>
+
+        <!-- PANE 2: MISTAKES & TRAPS NOTEBOOK -->
+        <div class="nb-pane-content hidden" id="nb-pane-traps">
+          <!-- Traps Toolbar -->
+          <div class="notebook-toolbar">
+            <div class="g-search-wrapper">
+              <span class="g-search-icon">🔍</span>
+              <input type="text" id="input-filter-err-search" class="g-search-input" placeholder="Tìm theo câu hỏi, bẫy ngữ pháp, ghi chú...">
+              <button type="button" class="btn-clear-search hidden" id="btn-clear-err-search" title="Xóa tìm kiếm">✕</button>
+            </div>
+            <button type="button" class="btn-pill btn-pill-primary" id="btn-add-new-error" title="Thêm ghi chép lỗi sai cho câu hiện tại">
+              <span class="icon">➕</span>
+              <span>Thêm bẫy / Lỗi sai</span>
+            </button>
+          </div>
+
+          <!-- Filter Chips (Google Material 3) -->
+          <div class="notebook-filter-chips" id="notebook-filter-chips">
+            <button type="button" class="filter-chip active" data-status="all">Tất cả (<span id="count-chip-all">0</span>)</button>
+            <button type="button" class="filter-chip chip-pending" data-status="Chưa xử lý">⏳ Chưa xử lý (<span id="count-chip-pending">0</span>)</button>
+            <button type="button" class="filter-chip chip-tracking" data-status="Đang theo dõi">🔄 Đang theo dõi (<span id="count-chip-tracking">0</span>)</button>
+            <button type="button" class="filter-chip chip-resolved" data-status="Đã triệt tiêu">✅ Đã triệt tiêu (<span id="count-chip-resolved">0</span>)</button>
+          </div>
+
+          <!-- Inline Add New Entry Panel (Collapsible) -->
+          <div class="notebook-add-panel hidden" id="notebook-add-panel">
+            <div class="add-panel-header">
+              <h4>➕ Ghi chép bẫy đề thi</h4>
+              <span class="current-q-pill" id="add-panel-q-badge">Câu hiện tại</span>
+            </div>
+            <div class="add-panel-grid">
+              <div class="form-group">
+                <label for="select-new-trap">1. Nhóm bẫy đề thi HSG <span class="req">*</span></label>
+                <select id="select-new-trap" class="g-select">
+                  <option value="Bẫy Đảo ngữ & Cấu trúc nhấn mạnh (Inversion / Cleft)">⚡ Bẫy Đảo ngữ & Cấu trúc nhấn mạnh (Inversion / Cleft)</option>
+                  <option value="Bẫy Collocations & Giới từ đi kèm (Prepositions)">📖 Bẫy Collocations & Giới từ đi kèm (Prepositions)</option>
+                  <option value="Bẫy Cấu tạo từ & Tiền/Hậu tố phủ định (Word Formation)">🔤 Bẫy Cấu tạo từ & Tiền/Hậu tố phủ định (Word Formation)</option>
+                  <option value="Bẫy Thì & Thể giả định (Subjunctive / Conditionals)">💡 Bẫy Thì & Thể giả định (Subjunctive / Conditionals)</option>
+                  <option value="Bẫy Mệnh đề quan hệ & Rút gọn mệnh đề (Participles)">🧩 Bẫy Mệnh đề quan hệ & Rút gọn mệnh đề (Participles)</option>
+                  <option value="Bẫy Từ đồng nghĩa tinh tế & Ngữ cảnh (Nuance & Context)">🔍 Bẫy Từ đồng nghĩa tinh tế & Ngữ cảnh (Nuance & Context)</option>
+                  <option value="Bẫy Nghe nhiễu & Bắt từ tương đồng (Listening Distractor)">🎧 Bẫy Nghe nhiễu & Bắt từ tương đồng (Listening Distractor)</option>
+                  <option value="Bẫy Đọc lướt sót từ khóa quan trọng (Careless Reading)">👀 Bẫy Đọc lướt sót từ khóa quan trọng (Careless Reading)</option>
+                  <option value="Chưa nắm chắc công thức / hiện tượng ngữ pháp">📚 Chưa nắm chắc công thức / hiện tượng ngữ pháp</option>
+                  <option value="Khác">💡 Bẫy khác...</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="select-new-status">2. Tình trạng ban đầu</label>
+                <select id="select-new-status" class="g-select">
+                  <option value="Chưa xử lý">⏳ Chưa xử lý</option>
+                  <option value="Đang theo dõi" selected>🔄 Đang theo dõi</option>
+                  <option value="Đã triệt tiêu">✅ Đã triệt tiêu</option>
+                </select>
+              </div>
+              <div class="form-group full-width">
+                <label for="input-new-detail">3. Phân tích nguyên nhân sai & Bài học rút ra <span class="req">*</span></label>
+                <textarea id="input-new-detail" class="g-textarea" rows="2" placeholder="Tại sao em chọn nhầm? Điểm cốt lõi cần nhớ cho lần sau..."></textarea>
+              </div>
+              <div class="form-group full-width">
+                <label for="input-new-notes">4. 📝 Ghi chú tư duy cá nhân (Mẹo nhớ nhanh - Không bắt buộc)</label>
+                <textarea id="input-new-notes" class="g-textarea" rows="2" placeholder="Ví dụ: Dấu hiệu đảo ngữ Not only... but also; chú ý giới từ at/on..."></textarea>
+              </div>
+            </div>
+            <div class="add-panel-actions">
+              <button type="button" class="btn-sm btn-subtle" id="btn-cancel-add-error">✕ Hủy</button>
+              <button type="button" class="btn-sm btn-primary-g" id="btn-save-new-error">💾 Lưu vào sổ bẫy sai</button>
+            </div>
+          </div>
+
+          <!-- Notebook Items List -->
+          <div class="error-log-list" id="error-log-list">
+            <!-- Dynamically populated from localStorage -->
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: QUICK ADD VOCABULARY POPUP ================= -->
+  <div class="modal-overlay hidden" id="modal-quick-vocab">
+    <div class="modal-card quick-vocab-card">
+      <div class="modal-card-header">
+        <div class="qv-title-row">
+          <span class="qv-icon">📖</span>
+          <div>
+            <h3 style="margin: 0; font-size: 18px; color: #1e293b;">Ghi Từ Mới Vào Sổ Tay</h3>
+            <span class="qv-subtitle" id="qv-q-context-badge">Câu hiện tại</span>
+          </div>
+        </div>
+        <button type="button" class="btn-close-modal" id="btn-close-quick-vocab">✕</button>
+      </div>
+      <div class="modal-card-body" style="padding: 18px 24px;">
+        <form id="form-quick-vocab" onsubmit="return false;">
+          <div class="form-row-2col">
+            <div class="form-group">
+              <label for="qv-input-word">Từ vựng / Cụm từ <span class="req">*</span></label>
+              <div style="display: flex; gap: 6px;">
+                <input type="text" id="qv-input-word" class="g-input" placeholder="Ví dụ: ubiquitous, come in handy..." required autofocus style="flex:1;">
+                <button type="button" class="btn-test-speak" id="btn-qv-test-speak" title="Nghe phát âm thử">🔊</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="qv-select-type">Từ loại</label>
+              <select id="qv-select-type" class="g-input">
+                <option value="adjective">Adjective [adj] (Tính từ)</option>
+                <option value="noun">Noun [n] (Danh từ)</option>
+                <option value="verb">Verb [v] (Động từ)</option>
+                <option value="adverb">Adverb [adv] (Phó từ)</option>
+                <option value="idiom">Idiom (Thành ngữ)</option>
+                <option value="phrasal">Phrasal Verb (Cụm động từ)</option>
+                <option value="collocation">Collocation (Cụm kết hợp)</option>
+                <option value="other">Khác</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="qv-input-meaning">Nghĩa tiếng Việt <span class="req">*</span></label>
+            <input type="text" id="qv-input-meaning" class="g-input" placeholder="Nghĩa trong ngữ cảnh câu này..." required>
+          </div>
+
+          <!-- Collapsible More Fields -->
+          <div class="qv-expand-toggle" id="btn-toggle-qv-more">
+            <span id="qv-more-icon">🔽</span>
+            <span>Thêm phiên âm, ví dụ & collocations (Tùy chọn)</span>
+          </div>
+
+          <div class="qv-more-fields hidden" id="qv-more-fields">
+            <div class="form-row-2col">
+              <div class="form-group">
+                <label for="qv-input-ipa">Phiên âm IPA</label>
+                <input type="text" id="qv-input-ipa" class="g-input" placeholder="/juːˈbɪk.wɪ.təs/">
+              </div>
+              <div class="form-group">
+                <label for="qv-input-collocations">Collocations / Đồng nghĩa</label>
+                <input type="text" id="qv-input-collocations" class="g-input" placeholder="Ví dụ: ubiquitous presence...">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="qv-input-example">Câu ví dụ / Ngữ cảnh</label>
+              <textarea id="qv-input-example" class="g-textarea" rows="2" placeholder="Trích câu chứa từ này trong đề bài..."></textarea>
+            </div>
+          </div>
+
+          <div class="qv-actions">
+            <button type="button" class="btn-subtle" id="btn-cancel-quick-vocab">✕ Hủy</button>
+            <button type="button" class="btn-primary-g" id="btn-submit-quick-vocab">💾 Lưu Vào Sổ Từ Vựng</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= MODAL: PERSONAL VOCAB FLASHCARD PLAYER ================= -->
+  <div class="modal-overlay hidden" id="modal-personal-flashcard">
+    <div class="modal-card personal-fc-card">
+      <div class="modal-card-header">
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <span style="font-size: 20px;">🎴</span>
+          <h3 style="margin: 0; font-size: 17px; color: #1e293b;">Ôn Tập Thẻ Từ Vựng Cá Nhân</h3>
+        </div>
+        <button type="button" class="btn-close-modal" id="btn-close-personal-fc">✕</button>
+      </div>
+      <div class="modal-card-body" style="padding: 20px;">
+        <div class="pfc-progress-row">
+          <span class="pfc-counter" id="pfc-counter">Thẻ 1 / 1</span>
+          <span class="pfc-status-badge" id="pfc-status-badge">🔄 Đang học</span>
+        </div>
+
+        <!-- 3D Flip Card Scene -->
+        <div class="pfc-card-scene" id="pfc-card-scene">
+          <div class="pfc-card-inner" id="pfc-card-inner">
+            <!-- Front -->
+            <div class="pfc-card-face pfc-face-front">
+              <span class="pfc-tag" id="pfc-card-type">[adjective]</span>
+              <h2 class="pfc-word" id="pfc-card-word">ubiquitous</h2>
+              <p class="pfc-ipa" id="pfc-card-ipa">/juːˈbɪk.wɪ.təs/</p>
+              <button type="button" class="pfc-btn-speak" id="btn-pfc-speak" title="Nghe phát âm">🔊 Nghe phát âm</button>
+              <div class="pfc-hint-flip">Chạm vào thẻ hoặc nhấn Space để lật thẻ 🔄</div>
+            </div>
+            <!-- Back -->
+            <div class="pfc-card-face pfc-face-back">
+              <div class="pfc-meaning-box" id="pfc-card-meaning">phổ biến, có mặt ở khắp mọi nơi</div>
+              <div class="pfc-example-box" id="pfc-card-example"><strong>Ví dụ:</strong> "Smartphones are ubiquitous nowadays."</div>
+              <div class="pfc-collocations-box" id="pfc-card-collocations"><strong>Cụm đi kèm:</strong> ubiquitous presence</div>
+              <div class="pfc-origin-badge" id="pfc-card-q-origin">📘 Nguồn: Câu 26</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Flashcard Bottom Controls -->
+        <div class="pfc-controls">
+          <button type="button" class="btn-pfc-nav" id="btn-pfc-prev">← Từ trước</button>
+          <button type="button" class="btn-pfc-toggle-master" id="btn-pfc-toggle-master">
+            <span id="pfc-master-icon">✅</span>
+            <span id="pfc-master-text">Đánh dấu Đã thuộc</span>
           </button>
-        </div>
-
-        <!-- Filter Chips (Google Material 3) -->
-        <div class="notebook-filter-chips" id="notebook-filter-chips">
-          <button class="filter-chip active" data-status="all">Tất cả (<span id="count-chip-all">0</span>)</button>
-          <button class="filter-chip chip-pending" data-status="Chưa xử lý">⏳ Chưa xử lý (<span id="count-chip-pending">0</span>)</button>
-          <button class="filter-chip chip-tracking" data-status="Đang theo dõi">🔄 Đang theo dõi (<span id="count-chip-tracking">0</span>)</button>
-          <button class="filter-chip chip-resolved" data-status="Đã triệt tiêu">✅ Đã triệt tiêu (<span id="count-chip-resolved">0</span>)</button>
-        </div>
-
-        <!-- Inline Add New Entry Panel (Collapsible) -->
-        <div class="notebook-add-panel hidden" id="notebook-add-panel">
-          <div class="add-panel-header">
-            <h4>➕ Ghi chép mới</h4>
-            <span class="current-q-pill" id="add-panel-q-badge">Câu hiện tại</span>
-          </div>
-          <div class="add-panel-grid">
-            <div class="form-group">
-              <label for="select-new-trap">1. Nhóm bẫy SAT <span class="req">*</span></label>
-              <select id="select-new-trap" class="g-select">
-                <option value="Bẫy từ vựng & Nghĩa trong ngữ cảnh (Context Clues)">📖 Bẫy từ vựng & Nghĩa trong ngữ cảnh (Context Clues)</option>
-                <option value="Bẫy đảo cực & Từ tuyệt đối (Extreme Words: always, never, only...)">⚠️ Bẫy đảo cực & Từ tuyệt đối (Extreme Words: always, never, only...)</option>
-                <option value="Bẫy tương phản giả & Cụm nối (However, Although, But...)">⚡ Bẫy tương phản giả & Cụm nối (However, Although, But...)</option>
-                <option value="Bẫy suy diễn quá xa / Lạc đề (Out of Scope / Assumption)">🔍 Bẫy suy diễn quá xa / Lạc đề (Out of Scope / Assumption)</option>
-                <option value="Bẫy đọc lướt sót từ khóa quan trọng (Careless Reading)">👀 Bẫy đọc lướt sót từ khóa quan trọng (Careless Reading)</option>
-                <option value="Bẫy đại số / Đổi dấu / Chuyển vế nhầm (Algebra / Sign Trap)">🧮 Bẫy đại số / Đổi dấu / Chuyển vế nhầm (Algebra / Sign Trap)</option>
-                <option value="Bẫy đọc nhầm câu hỏi (Đề hỏi y nhưng giải ra x)">🎯 Bẫy đọc nhầm câu hỏi (Đề hỏi y nhưng giải ra x)</option>
-                <option value="Bẫy làm tròn số / Phân số / Đơn vị đo (Fractions / Units)">📏 Bẫy làm tròn số / Phân số / Đơn vị đo (Fractions / Units)</option>
-                <option value="Chưa nắm chắc công thức / lý thuyết cốt lõi">📚 Chưa nắm chắc công thức / lý thuyết cốt lõi</option>
-                <option value="Khác">💡 Bẫy khác...</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <label for="select-new-status">2. Tình trạng ban đầu</label>
-              <select id="select-new-status" class="g-select">
-                <option value="Chưa xử lý">⏳ Chưa xử lý</option>
-                <option value="Đang theo dõi" selected>🔄 Đang theo dõi</option>
-                <option value="Đã triệt tiêu">✅ Đã triệt tiêu</option>
-              </select>
-            </div>
-            <div class="form-group full-width">
-              <label for="input-new-detail">3. Phân tích nguyên nhân sai & Bài học rút ra <span class="req">*</span></label>
-              <textarea id="input-new-detail" class="g-textarea" rows="2" placeholder="Tại sao em chọn nhầm? Điểm cốt lõi cần nhớ cho lần sau..."></textarea>
-            </div>
-            <div class="form-group full-width">
-              <label for="input-new-notes">4. 📝 Ghi chú tư duy cá nhân (Mẹo nhớ nhanh - Không bắt buộc)</label>
-              <textarea id="input-new-notes" class="g-textarea" rows="2" placeholder="Ví dụ: Công thức tính nhanh, mẹo loại trừ phương án C, chú ý liên từ đối lập..."></textarea>
-            </div>
-            <div class="form-group full-width">
-              <label for="input-new-vocab">5. 📖 Từ mới / Thuật ngữ tiếng Anh (Không bắt buộc)</label>
-              <textarea id="input-new-vocab" class="g-textarea" rows="2" placeholder="Ví dụ: ubiquitous (adj) = phổ biến; refute (v) = bác bỏ; conjecture (n) = phỏng đoán..."></textarea>
-            </div>
-          </div>
-          <div class="add-panel-actions">
-            <button class="btn-sm btn-subtle" id="btn-cancel-add-error">✕ Hủy</button>
-            <button class="btn-sm btn-primary-g" id="btn-save-new-error">💾 Lưu vào sổ</button>
-          </div>
-        </div>
-
-        <!-- Notebook Items List -->
-        <div class="error-log-list" id="error-log-list">
-          <!-- Dynamically populated from localStorage -->
+          <button type="button" class="btn-pfc-nav" id="btn-pfc-next">Từ tiếp theo →</button>
         </div>
       </div>
     </div>
