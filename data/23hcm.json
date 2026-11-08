@@ -7,7 +7,11 @@
   "exam_type": "Đề thi HSG Cấp Thành phố Chính thức",
   "time_minutes": 120,
   "total_questions": 110,
-  "pdf_path": "pdf/23-hcm-de-thi.pdf",
+  "pdf_path": "https://drive.google.com/file/d/1rJnBe82HIt7HPS1dEW3cK3JedkntBzFr/preview",
+  "pdf_drive_id": "1rJnBe82HIt7HPS1dEW3cK3JedkntBzFr",
+  "pdf_preview_url": "https://drive.google.com/file/d/1rJnBe82HIt7HPS1dEW3cK3JedkntBzFr/preview",
+  "pdf_view_url": "https://drive.google.com/file/d/1rJnBe82HIt7HPS1dEW3cK3JedkntBzFr/view",
+  "pdf_drive_view": "https://drive.google.com/file/d/1rJnBe82HIt7HPS1dEW3cK3JedkntBzFr/view",
   "has_audio": false,
   "modules": [
     {

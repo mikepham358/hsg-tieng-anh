@@ -35,7 +35,10 @@ const TESTS_MANIFEST_DEFAULT = [
     badge: "Chính thức",
     date: "2023",
     dataFile: "data/23hcm.json",
-    pdfPath: "pdf/23-hcm-de-thi.pdf",
+    pdfDriveId: "1rJnBe82HIt7HPS1dEW3cK3JedkntBzFr",
+    pdfPreviewUrl: "https://drive.google.com/file/d/1rJnBe82HIt7HPS1dEW3cK3JedkntBzFr/preview",
+    pdfViewUrl: "https://drive.google.com/file/d/1rJnBe82HIt7HPS1dEW3cK3JedkntBzFr/view",
+    pdfPath: "https://drive.google.com/file/d/1rJnBe82HIt7HPS1dEW3cK3JedkntBzFr/preview",
     poster: "poster.png",
     total_questions: 110,
     time_minutes: 120,
@@ -914,7 +917,7 @@ function updateActiveTestUI() {
     DOM.heroPosterImg.src = test.poster;
   }
   if (DOM.btnHeroDrivePdf) {
-    DOM.btnHeroDrivePdf.href = test.pdfPath || test.pdfViewUrl || "pdf/24-hanoi-de-thi.pdf";
+    DOM.btnHeroDrivePdf.href = test.pdfViewUrl || test.pdfPath || "pdf/24-hanoi-de-thi.pdf";
   }
 
   // Practice View header badge & PDF iframe
@@ -922,8 +925,8 @@ function updateActiveTestUI() {
     DOM.practiceTestBadge.textContent = test.short_title;
   }
   if (DOM.pdfFrame) {
-    const targetPdf = test.pdfPath || test.pdfPreviewUrl || "pdf/24-hanoi-de-thi.pdf#page=1";
-    if (!DOM.pdfFrame.src || !DOM.pdfFrame.src.includes(targetPdf)) {
+    const targetPdf = test.pdfPreviewUrl || test.pdfPath || "pdf/24-hanoi-de-thi.pdf#page=1";
+    if (!DOM.pdfFrame.src || !DOM.pdfFrame.src.includes(test.pdfDriveId || targetPdf)) {
       DOM.pdfFrame.src = targetPdf;
     }
   }
@@ -1256,10 +1259,18 @@ function renderCurrentQuestion() {
   if (DOM.pdfSyncPageNum) DOM.pdfSyncPageNum.textContent = q.pdf_page || 1;
   if (DOM.inputPdfPage) DOM.inputPdfPage.value = q.pdf_page || 1;
   if (DOM.pdfFrame && q.pdf_page) {
-    const currentPdf = (App.activeTest && App.activeTest.pdfPath) ? App.activeTest.pdfPath : (App.db && App.db.pdf_path ? App.db.pdf_path : "pdf/24-hanoi-de-thi.pdf");
-    const targetSrc = `${currentPdf}#page=${q.pdf_page}`;
-    if (!DOM.pdfFrame.src || !DOM.pdfFrame.src.includes(`page=${q.pdf_page}`) || !DOM.pdfFrame.src.includes(currentPdf)) {
-      DOM.pdfFrame.src = targetSrc;
+    const currentTest = App.activeTest || getActiveTestMeta();
+    if (currentTest && currentTest.pdfDriveId) {
+      const drivePreview = currentTest.pdfPreviewUrl || `https://drive.google.com/file/d/${currentTest.pdfDriveId}/preview`;
+      if (!DOM.pdfFrame.src || !DOM.pdfFrame.src.includes(currentTest.pdfDriveId)) {
+        DOM.pdfFrame.src = drivePreview;
+      }
+    } else {
+      const currentPdf = (currentTest && currentTest.pdfPath) ? currentTest.pdfPath : (App.db && App.db.pdf_path ? App.db.pdf_path : "pdf/24-hanoi-de-thi.pdf");
+      const targetSrc = `${currentPdf}#page=${q.pdf_page}`;
+      if (!DOM.pdfFrame.src || !DOM.pdfFrame.src.includes(`page=${q.pdf_page}`) || !DOM.pdfFrame.src.includes(currentPdf)) {
+        DOM.pdfFrame.src = targetSrc;
+      }
     }
   }
 
