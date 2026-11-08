@@ -26,6 +26,22 @@ const TESTS_MANIFEST_DEFAULT = [
     audio_part2: "audio/part2.mp3",
     storageKey: "hsg_24hanoi_student_state_v1",
     description: "Đề thi chính thức HSG Tiếng Anh Lớp 9 Thành phố Hà Nội năm 2024 kèm Audio Listening Part 1 & 2, hướng dẫn giải thích 4 tầng Socratic, bẫy ngữ pháp và Mermaid Mindmap."
+  },
+  {
+    id: "23-hcm",
+    code: "23hcm",
+    title: "Kỳ thi Chọn Học sinh Giỏi Lớp 9 TP. Hồ Chí Minh (Năm học 2022 - 2023)",
+    short_title: "TP.HCM 2023 (HSG 9)",
+    badge: "Chính thức",
+    date: "2023",
+    dataFile: "data/23hcm.json",
+    pdfPath: "pdf/23-hcm-de-thi.pdf",
+    poster: "poster.png",
+    total_questions: 110,
+    time_minutes: 120,
+    has_audio: false,
+    storageKey: "hsg_23hcm_student_state_v1",
+    description: "Đề thi chính thức HSG Tiếng Anh Lớp 9 TP. Hồ Chí Minh năm học 2022 - 2023 có đáp án chính thức Sở GD&ĐT, hướng dẫn giải thích 4 tầng Socratic, bẫy ngữ pháp và sơ đồ tư duy Mermaid."
   }
 ];
 
@@ -36,10 +52,12 @@ function detectInitialTestId() {
     const paramTest = urlParams.get("test");
     if (paramTest) {
       const clean = paramTest.toLowerCase().replace(/[^a-z0-9]/g, "");
+      if (clean.includes("23hcm") || clean.includes("hcm")) return "23-hcm";
       if (clean.includes("24hanoi") || clean.includes("hanoi")) return "24-hanoi";
       return paramTest;
     }
     const hash = window.location.hash || "";
+    if (hash.includes("23hcm") || hash.includes("hcm")) return "23-hcm";
     if (hash.includes("24hanoi") || hash.includes("hanoi")) return "24-hanoi";
 
     const saved = localStorage.getItem("hsg_selected_test_id");
@@ -917,10 +935,31 @@ function updateActiveTestUI() {
     const mM3 = App.db.modules.find(m => m.code === "READING_COMPREHENSION");
     const mM4 = App.db.modules.find(m => m.code === "WRITING_TRANSFORMATION");
 
-    if (mM1 && DOM.pageModM1) DOM.pageModM1.textContent = `📖 Trang ${mM1.pdf_start_page || 1} – 3`;
-    if (mM2 && DOM.pageModM2) DOM.pageModM2.textContent = `📖 Trang ${mM2.pdf_start_page || 3} – 5`;
-    if (mM3 && DOM.pageModM3) DOM.pageModM3.textContent = `📖 Trang ${mM3.pdf_start_page || 5} – 7`;
-    if (mM4 && DOM.pageModM4) DOM.pageModM4.textContent = `📖 Trang ${mM4.pdf_start_page || 8} – 9`;
+    if (mM1 && DOM.pageModM1) DOM.pageModM1.textContent = `📖 Trang ${mM1.pdf_start_page || 1}`;
+    if (mM2 && DOM.pageModM2) DOM.pageModM2.textContent = `📖 Trang ${mM2.pdf_start_page || 2}`;
+    if (mM3 && DOM.pageModM3) DOM.pageModM3.textContent = `📖 Trang ${mM3.pdf_start_page || 3}`;
+    if (mM4 && DOM.pageModM4) DOM.pageModM4.textContent = `📖 Trang ${mM4.pdf_start_page || 4}`;
+
+    // Update Module Selector dropdown options
+    if (DOM.selectModule) {
+      const curMod = App.activeModuleCode || DOM.selectModule.value || "LISTENING_PHONETICS";
+      DOM.selectModule.innerHTML = "";
+      const optAll = document.createElement("option");
+      optAll.value = "ALL";
+      optAll.textContent = `Toàn Bộ Đề Thi (${App.db.total_questions || App.db.questions.length} Câu)`;
+      DOM.selectModule.appendChild(optAll);
+
+      App.db.modules.forEach(m => {
+        const opt = document.createElement("option");
+        opt.value = m.code;
+        const startQ = m.question_ids && m.question_ids.length ? m.question_ids[0] : 1;
+        const endQ = m.question_ids && m.question_ids.length ? m.question_ids[m.question_ids.length - 1] : m.question_count;
+        opt.textContent = `${m.title} (Câu ${startQ} - ${endQ})`;
+        if (m.code === curMod) opt.selected = true;
+        DOM.selectModule.appendChild(opt);
+      });
+      DOM.selectModule.value = curMod;
+    }
   }
 }
 
@@ -993,11 +1032,11 @@ function renderExamSelectors() {
         <h3 class="exam-card-title">${test.title}</h3>
         <p class="exam-card-desc">${test.description}</p>
         <div class="exam-card-meta">
-          <span>📅 ${test.date || "2026"}</span>
+          <span>📅 ${test.date || "2024"}</span>
           <span>•</span>
-          <span>📝 98 Câu Hỏi (4 Modules)</span>
+          <span>📝 ${test.total_questions || 105} Câu Hỏi (4 Modules)</span>
           <span>•</span>
-          <span>⏱️ 134 Phút</span>
+          <span>⏱️ ${test.time_minutes || 120} Phút</span>
         </div>
         <div class="exam-progress-bar-wrap">
           <div class="exam-progress-label">
@@ -1217,8 +1256,9 @@ function renderCurrentQuestion() {
   if (DOM.pdfSyncPageNum) DOM.pdfSyncPageNum.textContent = q.pdf_page || 1;
   if (DOM.inputPdfPage) DOM.inputPdfPage.value = q.pdf_page || 1;
   if (DOM.pdfFrame && q.pdf_page) {
-    const targetSrc = `pdf/24-hanoi-de-thi.pdf#page=${q.pdf_page}`;
-    if (!DOM.pdfFrame.src || !DOM.pdfFrame.src.includes(`page=${q.pdf_page}`)) {
+    const currentPdf = (App.activeTest && App.activeTest.pdfPath) ? App.activeTest.pdfPath : (App.db && App.db.pdf_path ? App.db.pdf_path : "pdf/24-hanoi-de-thi.pdf");
+    const targetSrc = `${currentPdf}#page=${q.pdf_page}`;
+    if (!DOM.pdfFrame.src || !DOM.pdfFrame.src.includes(`page=${q.pdf_page}`) || !DOM.pdfFrame.src.includes(currentPdf)) {
       DOM.pdfFrame.src = targetSrc;
     }
   }

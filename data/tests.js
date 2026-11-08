@@ -20,5 +20,21 @@ window.TESTS_MANIFEST = [
     audio_part2: "audio/part2.mp3",
     storageKey: "hsg_24hanoi_student_state_v1",
     description: "Đề thi chính thức HSG Tiếng Anh Lớp 9 Thành phố Hà Nội năm 2024 kèm Audio Listening Part 1 & 2, hướng dẫn giải thích 4 tầng Socratic, bẫy ngữ pháp và Mermaid Mindmap."
+  },
+  {
+    id: "23-hcm",
+    code: "23hcm",
+    title: "Kỳ thi Chọn Học sinh Giỏi Lớp 9 TP. Hồ Chí Minh (Năm học 2022 - 2023)",
+    short_title: "TP.HCM 2023 (HSG 9)",
+    badge: "Chính thức",
+    date: "2023",
+    dataFile: "data/23hcm.json",
+    pdfPath: "pdf/23-hcm-de-thi.pdf",
+    poster: "poster.png",
+    total_questions: 110,
+    time_minutes: 120,
+    has_audio: false,
+    storageKey: "hsg_23hcm_student_state_v1",
+    description: "Đề thi chính thức HSG Tiếng Anh Lớp 9 TP. Hồ Chí Minh năm học 2022 - 2023 có đáp án chính thức Sở GD&ĐT, hướng dẫn giải thích 4 tầng Socratic, bẫy ngữ pháp và sơ đồ tư duy Mermaid."
   }
 ];
