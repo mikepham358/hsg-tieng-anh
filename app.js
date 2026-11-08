@@ -1510,12 +1510,15 @@ function renderHints(q, qState) {
     DOM.hintCard3.classList.remove("unlocked");
   }
 
-  // Tier 4: Strategic Tip & Công thức chuẩn College Board / Princeton Review (Mở khi làm đúng hoặc hoàn thành)
+  // Tier 4: Strategic Tip & Chiến thuật Chuyên Anh / HSG (Mở khi làm đúng hoặc hoàn thành)
   if (DOM.hintCard4) {
     if (isFinished) {
       let content = "";
+      if (q.tier4_hint) {
+        content += `<p style="margin-bottom: 8px;"><strong>🎯 Phân tích Chiến thuật Chuyên sâu:</strong> ${escapeHtml(q.tier4_hint)}</p>`;
+      }
       if (q.princeton_strategy) {
-        content += `<p style="margin-bottom: 8px;"><strong>🎯 Chiến thuật Princeton Review:</strong> ${escapeHtml(q.princeton_strategy)}</p>`;
+        content += `<p style="margin-bottom: 8px;"><strong>🎯 Chiến thuật Phòng thi:</strong> ${escapeHtml(q.princeton_strategy)}</p>`;
       }
       if (q.target_clue) {
         content += `<p style="margin-bottom: 8px;"><strong>🔍 Phân tích Manh mối & Target:</strong> ${escapeHtml(q.target_clue)}</p>`;
@@ -1524,13 +1527,13 @@ function renderHints(q, qState) {
         content += `<p style="margin-bottom: 8px;"><strong>💡 Mẹo độc quyền Pro-Tip:</strong> ${escapeHtml(q.pro_tip)}</p>`;
       }
       if (!content) {
-        content = `<strong>✨ Chiến thuật College Board:</strong><br>${escapeHtml(q.strategic_tip || "Nắm vững quy tắc và công thức toán / ngữ pháp cốt lõi.")}`;
+        content = `<strong>✨ Chiến thuật Chuyên Anh & HSG:</strong><br>${escapeHtml(q.strategic_tip || "Nắm vững quy tắc ngữ pháp, collocation và kỹ năng tư duy phản biện.")}`;
       }
       DOM.hintText4.innerHTML = content;
       DOM.hintContent4.classList.remove("collapsed");
       DOM.hintCard4.classList.add("unlocked");
     } else {
-      DOM.hintText4.textContent = "🔒 Hoàn thành câu hỏi để mở khóa phân tích chiến thuật & mẹo độc quyền Princeton Review.";
+      DOM.hintText4.textContent = "🔒 Hoàn thành câu hỏi để mở khóa phân tích chiến thuật & mẹo độc quyền cho học sinh giỏi.";
       DOM.hintContent4.classList.add("collapsed");
       DOM.hintCard4.classList.remove("unlocked");
     }
